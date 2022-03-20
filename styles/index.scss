@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+@font-face {
+    font-family: 'Sheep Sans';
+    src: url('../public/Fontes/sheep_sans/sheepsans.ttf') format('truetype');
+}
+
+$c1: #332D2D;
+$c2: #453331;
+$c3 : #734E46;
+$c4: #C28874;
+$c5: #DDB49E;
+
+body, html {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Sheep Sans';
+    text-align: center;
+    align-self: center;
+}
+
+p, li, a, div {
+    font-family: 'ABeeZee';
+}
+
+div#parallax {
+    min-height: 99vh; /* "será que tem mais para ver no site?"*/
+
+    background-image: url("../public/Biels/BielaA1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left top;
+
+    box-shadow: inset 1px 0px 11px 0px #00000036;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-size: clamp(30px, 4vw, 70px); // 40px
+
+    p {
+        font-weight: bolder;
+    }
+}
+
+main {
+    display: flex;
+
+    flex-direction: column;
+
+    h2 {
+        margin: 30px;
+    }
+
+    section {
+        display: flex;
+
+        &#sobre {
+            flex-direction: row;
+
+            margin: 20px;
+            line-height: 1.5em;
+            // flex-wrap: wrap;
+
+            div {
+                margin: 10px;
+            }
+        }
+
+        &#artista {
+            gap: 30px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            
+            line-height: 2em;
+
+            div {
+                display: grid;
+                grid-row: none;
+
+                margin: 20px;
+            }
+
+            div:nth-child(3) {
+                @for $i from 1 to 7 {
+                    p:nth-child(#{$i}) {
+                        background-color: lighten($c1, $i * 5%);
+                        padding: 8px;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+
+        &#galeria {
+            align-items: center;
+            justify-content: center;
+        }
+
+        &#aparicoes {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+footer {
+
+    h2 {
+        text-align: center;
+    }
+    
+    div#contatos {
+        display: grid;
+        grid-auto-flow: column;
+
+        a {
+            text-decoration: none;
+            color: black;
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+  
+/* inViewport */
+  
+[data-inviewport="slide-in"] { 
+    transition: 2s;
+    filter: opacity(0);
+}
+
+[data-inviewport="slide-in"].is-inViewport { 
+    filter: opacity(100);
+}
+
+div#tr[data-inviewport="slide-p-in"] { 
+   p {
+    transition: 3s;
+    filter: opacity(0);
+   }
+}
+
+div#tr[data-inviewport="slide-p-in"].is-inViewport { 
+    p {
+        filter: opacity(100);
+    }
+}
+  
+[data-inviewport="scale-in"] { 
+    transition: 1.8s;
+    transform: scale(0.2);
+    filter: blur(5px);
+}
+
+[data-inviewport="scale-in"].is-inViewport { 
+    transform: scale(1);
+    filter: blur(0px);
+}
+
+// transform: rotate(180deg);
