@@ -12,7 +12,7 @@ import BielRio from "../public/Biels/BielRio.jpg"
 import BielS2 from "../public/Biels/BielS2.jpg"
 import BielSentado from "../public/Biels/BielSentado.jpeg"
 import BielLiz from "../public/Biels/BielLiz.jpeg"
-import BielRiste from "../public/Biels/BielRiste.jpg"
+import BielRiste from "../public/Biels/BielRiste.jpg" // Guerra civil
 
 
 // Estudos
@@ -24,7 +24,6 @@ import Sapateado from "../public/Imagens/sapateado.jpg"
 // Trabalhos Recentes
 import NovelaReis from "../public/Imagens/NovelaReis.jpg"
 import Vicente from "../public/Imagens/Vicente.jpg"
-import GuerraCivil from "../public/Imagens/GuerraCivil.jpg"
 
 // Contatos
 import Whatsapp from "../public/Imagens/whatsapp.png"
@@ -111,41 +110,41 @@ export default function Home() {
             <div>
               <Image 
                 layout='intrinsic'
-                objectFit='contain'
-                objectPosition={"center center"}
-                src={NovelaReis}
-                width={500}
-                height={500}
-                data-inviewport="scale-in"
-              />
-              Novela Reis
-            </div>
-            <div>
-              <Image 
-                layout='intrinsic'
-                objectFit='contain'
+                objectFit='cover'
                 objectPosition={"center center"}
                 src={Vicente}
                 width={500}
                 height={500}
                 data-inviewport="scale-in"
                />
-              Filme: Vicente na cidade Fantasma 
-              Personagem: Vicente (protagonista)
+              <p><strong>Filme</strong>: Vicente na cidade Fantasma 
+              Personagem: Vicente (protagonista)</p>
             </div>
             <div>
               <Image 
                 layout='intrinsic'
-                objectFit='contain'
+                objectFit="contain"
                 objectPosition={"center center"}
-                src={GuerraCivil}
+                src={NovelaReis}
+                width={500}
+                height={500}
+                data-inviewport="scale-in"
+              />
+              <p><strong>Novela:</strong> Reis</p>
+            </div>
+            <div>
+              <Image 
+                layout='intrinsic'
+                objectFit='cover'
+                objectPosition={"top center"}
+                src={BielRiste}
                 width={400}
                 height={400}
                 data-inviewport="scale-in"
                />
-              Filme: Guerra Cívil
+              <p><strong>Filme</strong>: Guerra Cívil
               Personagem: Michelângelo (protagonista)
-              Direção Flavio Carnielli
+              Direção Flavio Carnielli</p>
             </div>
           </div>
 
@@ -198,28 +197,12 @@ export default function Home() {
                     originalWidth: 600
                   }
                 })
-            } 
+            }
             showPlayButton={false}
             thumbnailPosition="right"
+            infinite={false}
+            showBullets={true}
           />
-          {
-          /*
-          <Image 
-            layout='intrinsic'
-            objectFit='contain'
-            objectPosition={"center center"}
-            </Image>
-            <Image 
-            layout='intrinsic'
-            objectFit='contain'
-            objectPosition={"center center"}
-            </Image>
-            <Image 
-            layout='intrinsic'
-            objectFit='contain'
-            objectPosition={"center center"}
-            </Image> 
-          */}
         </section>
         <section id="aparicoes">
           <h2>

@@ -68,6 +68,7 @@ main {
 
             div {
                 margin: 10px;
+                padding: 20px;
             }
         }
 
@@ -81,11 +82,12 @@ main {
             div {
                 display: grid;
                 grid-row: none;
+                text-align: center;
 
                 margin: 20px;
             }
 
-            div:nth-child(3) {
+            div#tr {
                 @for $i from 1 to 7 {
                     p:nth-child(#{$i}) {
                         background-color: lighten($c1, $i * 5%);
@@ -158,7 +160,7 @@ div#tr[data-inviewport="slide-p-in"].is-inViewport {
   
 [data-inviewport="scale-in"] { 
     transition: 1.8s;
-    transform: scale(0.2);
+    transform: scale(0.3);
     filter: blur(5px);
 }
 
