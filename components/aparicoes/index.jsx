@@ -27,7 +27,7 @@ export default function Aparicoes() {
                   <p>Model <br /> Brazil</p>
                   <img 
                     alt="Biel Marconato Model Brazil"
-                    src="https://modelbrazil.com.br/wp-content/upload s/2021/11/7EDCF1C1-9758-475F-A1F5-04B99843315D-213x300.jpeg"
+                    src="https://modelbrazil.com.br/wp-content/uploads/2021/11/7EDCF1C1-9758-475F-A1F5-04B99843315D-213x300.jpeg"
                     style={
                       {
                         height: "140%"
