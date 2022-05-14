@@ -57,21 +57,20 @@ export default function Artista() {
             <div data-inviewport="slide-p-in" id="tr">
                 <h3>Trabalhos Realizados</h3>
                 <p>
-                <strong>DESFILES</strong>: Feira Opera 2020/21, Catwalk internacional,
-                Aquarela Nacional, Passarela produção Brasil como
-                Mister São Paulo.
+                    <strong>Desfiles</strong>: Feira Opera 2020/21, Catwalk internacional,
+                    Aquarela Nacional, Passarela produção Brasil como
+                    Mister São Paulo.
                 </p>
                 <p>
-                <strong>CATÁLOGOS E CAMPANHAS</strong>: Malwee, Hering, Ellus, Demanos, Puket, Pistol Star e Hershey&apos;s.
+                    <strong>Catálogos e campanhas</strong>: Malwee, Hering, Ellus, Demanos, Puket, Pistol Star e Hershey&apos;s.
                 </p>
                 <p>
-                <strong>TV</strong>: Novela: As aventuras de Poliana SBT, Série: Bugados Globo play e Série: Escolinha Ecológica NGT TV.
+                    <strong>Novela</strong>: As aventuras de Poliana SBT.<br />
+                    <strong>Séries</strong>: Escolinha Ecológica NGT TV e Bugados Globo play.<br />
+                    <strong>Comerciais</strong>: Prefeitura de Sorocaba, Itau, Bradesco.
                 </p>
                 <p>
-                <strong>COMERCIAIS</strong>: Prefeitura de Sorocaba, Itau, Bradesco.
-                </p>
-                <p>
-                <strong>EDITORIAIS</strong>: Villy Ribeiro, Luciana Kajaer, Márcio Falcão.
+                    <strong>Editoriais</strong>: Villy Ribeiro, Luciana Kajaer, Márcio Falcão.
                 </p>
             </div>
             </section>

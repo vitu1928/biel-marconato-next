@@ -9,7 +9,7 @@
 
 $c1: #332D2D;
 $c2: #453331;
-$c3 : #734E46;
+$c3: #734E46;
 $c4: #C28874;
 $c5: #DDB49E;
 
@@ -71,9 +71,15 @@ main {
             div#tr {
                 @for $i from 1 to 7 {
                     p:nth-child(#{$i}) {
+                        text-align: initial;
+                        color:white;
                         background-color: lighten($c1, $i * 5%);
                         padding: 8px;
                         border-radius: 8px;
+
+                        strong {
+                            color: #acacac;
+                        }
                     }
                 }
             }
