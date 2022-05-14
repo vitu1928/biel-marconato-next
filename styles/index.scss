@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
-@import "~react-image-gallery/styles/scss/image-gallery.scss";
+@import "../components/aparicoes/style.scss";
+@import "../components/parallax/style.scss";
+
 @font-face {
-    font-family: 'Sheep Sans';
-    src: url('../public/Fontes/sheep_sans/sheepsans.ttf') format('truetype');
+  font-family: 'Sheep Sans';
+  src: url('../public/Fontes/sheep_sans/sheepsans.ttf') format('truetype');
 }
 
 $c1: #332D2D;
@@ -12,7 +14,8 @@ $c4: #C28874;
 $c5: #DDB49E;
 
 body, html {
-    margin: 0;
+  margin: 0;
+  scroll-behavior: smooth
 }
 
 h1, h2, h3 {
@@ -23,28 +26,6 @@ h1, h2, h3 {
 
 p, li, a, div {
     font-family: 'ABeeZee';
-}
-
-div#parallax {
-    min-height: 99vh; /* "será que tem mais para ver no site?"*/
-
-    background-image: url("../public/Biels/BielaA1.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: left top;
-
-    box-shadow: inset 1px 0px 11px 0px #00000036;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    font-size: clamp(30px, 4vw, 70px); // 40px
-
-    p {
-        font-weight: bolder;
-    }
 }
 
 main {
@@ -99,6 +80,14 @@ main {
         }
 
         &#galeria {
+            display: grid;
+            grid-template: 
+                "BielLiz BielLiz  BielS2" 
+                "BielRiste  BielCulos BielSentado" 
+                "Bielcruzado Bielolhar  BielRio";
+            padding: 50px;
+
+            gap: 10px;
             align-items: center;
             justify-content: center;
         }
@@ -106,19 +95,26 @@ main {
         &#aparicoes {
             align-items: center;
             justify-content: center;
+            padding: 40px;
+            gap: 25px;
         }
     }
 }
 
 footer {
+    margin: 45px;
 
     h2 {
         text-align: center;
     }
     
     div#contatos {
-        display: grid;
-        grid-auto-flow: column;
+        display: flex;
+        flex-wrap: wrap;
+        gap: clamp(30px, 4vw, 100px);
+        align-content: center;
+        align-items: center;
+        justify-content: center;
 
         a {
             text-decoration: none;
