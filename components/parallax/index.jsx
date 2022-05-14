@@ -1,5 +1,6 @@
 import Link from "next/link"
 
+
 export default function Parallax() {
     return (
         <div id="parallax">
