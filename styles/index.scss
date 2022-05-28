@@ -178,6 +178,9 @@ div#tr[data-inviewport="slide-p-in"].is-inViewport {
 // transform: rotate(180deg);
 
 @media only screen and (max-width: 865px) {
+    section#aparicoes {
+        grid-template: "gallery1 gallery2" "img1 img2";
+    }
    section#sobre {
        flex-wrap: wrap;
    }
