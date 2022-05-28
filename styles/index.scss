@@ -14,8 +14,12 @@ $c4: #C28874;
 $c5: #DDB49E;
 
 body, html {
-  margin: 0;
-  scroll-behavior: smooth
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 0px; 
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -172,3 +176,12 @@ div#tr[data-inviewport="slide-p-in"].is-inViewport {
 }
 
 // transform: rotate(180deg);
+
+@media only screen and (max-width: 865px) {
+   section#sobre {
+       flex-wrap: wrap;
+   }
+   section#artista div{
+        grid-row: auto;
+   }
+}
