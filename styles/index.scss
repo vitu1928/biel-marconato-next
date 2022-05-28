@@ -91,10 +91,7 @@ main {
 
         &#galeria {
             display: grid;
-            grid-template: 
-                "BielLiz BielLiz  BielS2" 
-                "BielRiste  BielCulos BielSentado" 
-                "Bielcruzado Bielolhar  BielRio";
+
             padding: 50px;
 
             gap: 10px;
@@ -177,14 +174,34 @@ div#tr[data-inviewport="slide-p-in"].is-inViewport {
 
 // transform: rotate(180deg);
 
-@media only screen and (max-width: 865px) {
-    section#aparicoes {
-        grid-template: "gallery1 gallery2" "img1 img2";
+@media only screen and (min-width: 865px) {
+    section#galeria {
+        grid-template: 
+        "BielLiz BielLiz  BielS2" 
+        "BielRiste  BielCulos BielSentado" 
+        "Bielcruzado Bielolhar  BielRio";
     }
-   section#sobre {
-       flex-wrap: wrap;
-   }
-   section#artista div{
-        grid-row: auto;
-   }
+}
+
+@media only screen and (max-width: 865px) {
+    section {
+        &#aparicoes {
+            grid-template: "gallery1 gallery2" "img1 img2";
+        }
+        &#galeria {
+            grid-template: 
+            "BielLiz BielLiz BielLiz" 
+            "BielS2 BielRiste BielSentado" 
+            "BielCulos BielCulos BielCulos"
+            "Bielcruzado Bielcruzado Bielcruzado"
+            "BielRio BielRio BielRio"
+            "Bielolhar Bielolhar Bielolhar";
+        }
+        &#sobre {
+            flex-wrap: wrap;
+        }
+        &#artista div {
+            grid-row: auto;
+        }
+    }
 }
