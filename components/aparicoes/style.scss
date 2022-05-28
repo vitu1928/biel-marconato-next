@@ -1,8 +1,20 @@
-section#aparicoes > div {
+section#aparicoes {
+  flex-wrap: wrap;
+}
+
+section#aparicoes > div#imgs {
+  display: flex;
+  gap: 1.2vw;
+}
+
+section#aparicoes > div#interact {
+  display: flex;
+  flex-wrap: nowrap;
+
   ul {
-    font-size: 1.3vw;
-    height: 50vw;
-    width: 15vw;
+    font-size: 2.3vw;
+    height: 75vw;
+    width: 30vw;
     display: grid;
     grid-template-rows: repeat(4,
       1fr

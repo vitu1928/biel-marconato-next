@@ -65,8 +65,8 @@ main {
             line-height: 2em;
 
             div {
-                display: grid;
-                grid-row: none;
+                display: flex;
+                flex-direction: column;
                 text-align: center;
 
                 margin: 20px;
