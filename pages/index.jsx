@@ -39,7 +39,7 @@ export default function Home() {
       <Head>
         <title>Biel Marconato</title>
         <meta name="description" content="Biel Marconato Web site" />
-        <link rel="icon" href="#" />
+        <link rel="icon" href="Biels/favicon-32x32.png"/>
       </Head>
 
       <Parallax />
