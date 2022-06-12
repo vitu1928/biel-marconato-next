@@ -138,6 +138,15 @@ footer {
             align-items: center;
         }
     }
+
+    div#by {
+        text-align: center;
+        // margin-top: 80px;
+
+        address {
+            visibility: hidden;
+        }
+    }
 }
   
 /* inViewport */

@@ -54,9 +54,9 @@ export default function Home() {
       <footer>
         <Contatos />
 
-        <div>
+        <div id="by">
           <p>
-          {/* <address>© 2022 feito por mim (Victor)</address> */}
+            <address>2022 © por Victor</address>
           </p>
         </div>
       </footer>
