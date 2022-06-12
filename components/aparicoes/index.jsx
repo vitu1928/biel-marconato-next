@@ -3,111 +3,263 @@ import JardinsMaravilhas from "../../public/Imagens/Aparicoes/JardinsMarvilhas.j
 import VigiaDeCana from "../../public/Imagens/Aparicoes/VigiaDeCana.jpg"
 
 import Image from "next/image"
+import Imgbox from "../imgbox"
 
 export default function Aparicoes() {
-  return (
-    <>
-      <h2>
-        Na mídia
-      </h2>
-      <section id="aparicoes"> 
-        <div style={{gridArea: "img1"}}>
-          <Image
-            layout='intrinsic'
-            objectFit='cover'
-            objectPosition={"center center"}
-            src={JardinsMaravilhas}
-            height={800}
-            width={400}
-          />
-        </div>
-        <div style={{gridArea: "gallery1"}} className="interact">
-          <base target="_blank" />
-          <ul>
-              <li>
-                <a href="https://modelbrazil.com.br/?s=Biel+Marconato+">
-                  <p>Model <br /> Brazil</p>
-                  <img 
-                    alt="Biel Marconato Model Brazil"
-                    src="https://modelbrazil.com.br/wp-content/uploads/2021/11/7EDCF1C1-9758-475F-A1F5-04B99843315D-213x300.jpeg"
-                    style={
-                      {
-                        height: "140%"
-                      }
-                    }
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://extra.globo.com/tv-e-lazer/biel-morconato-estreia-na-tv-em-reis-nova-novela-da-record-25447856.html">
-                  <p>Extra</p>
-                  <img 
-                    alt="Biel Marconato Globo"
-                    src="https://extra.globo.com/incoming/25448060-066-487/w448h673-PROP/whatsapp-image-2022-03-25-at-11.30.58.jpeg.jpg"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://observatoriodatv.uol.com.br/colunas/anddreh-ponttez/estrela-mirim-da-record-tv-biel-marconato-ganha-festa-de-aniversario-surpresa-de-os-chocolix">
-                  <p>Observatório<br />da TV</p>
-                  <img
-                    alt="Biel Marconato Observatório da TV"
-                    src="https://observatoriodatv.uol.com.br/wp-content/uploads/2022/02/biel-marconato.jpg"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://vimagazine.com.br/?p=2995">
-                  <p>Vimagazine</p>
-                  <img 
-                    alt="Biel Marconato Vimagazine" 
-                    src="https://vimagazine.com.br/wp-content/uploads/2022/02/festa-Biel-4-1024x683.jpg"
-                  />
-                </a>
-              </li>
-          </ul>
-        </div>
-        <div style={{gridArea: "gallery2"}} className="interact">
-          <base target="_blank" />
-          <ul>
-              <li>
-                <a href="https://timesbrasilia.com.br/destaque/estrela-mirim-da-record-tv-biel-marconato-completou-11-anos-com-comemoracao-cheia-de-famosos/">
-                  <p>Times<br />Brasilia</p>
-                  <img alt="Biel Marconato" src="https://timesbrasilia.com.br/wp-content/uploads/2022/02/festa-Biel-4-768x512.jpg" />
-                </a>
-              </li>
-              <li>
-                <a href="https://culturaenegocios.com.br/estrela-mirim-da-record-tv-biel-marconato-completou-11-anos-com-comemoracao-cheia-de-famosos/">
-                <p>Cultura E Negócios</p>
-                  <img alt="Biel Marconato" src="https://culturaenegocios.com.br/wp-content/uploads/2022/02/Captura-de-tela-2022-02-09-151243-1200x600.png" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/p/CZzTW0eO78W/?utm_medium=copy_link">
-                  <p>Expresso<br />News</p>
-                  <img alt="Biel Marconato" src={HarryP.src} />
-                </a>
-              </li>
-              <li>
-                <a href="https://revistapan.com.br/estrela-mirim-da-record-tv-biel-marconato-completou-11-anos-com-comemoracao-cheia-de-famosos/">
-                  <p>PAN</p>
-                  <img alt="Biel Marconato" src="https://revistapan.com.br/wp-content/uploads/2022/02/festa-Biel-5.jpg" />
-                </a>
-              </li>
-          </ul>
-        </div>
-        <div style={{gridArea: "img2"}}>
-          <Image
-            layout='intrinsic'
-            objectFit='fill'
-            objectPosition={"center center"}
-            src={VigiaDeCana}
-            height={800}
-            width={400}
-            
-          />
-        </div>
-      </section>
-    </>
-  )
+
+    return (
+        <>
+            <h2>
+                Na mídia
+            </h2>
+            <section id="aparicoes">
+                <ul type="none">
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={{ src: "https://marramaque.live/wp-content/uploads/2022/05/biel-reis-1.jpeg" }}
+                                title="Marramaque"
+                                popacitylow="BIEL MARCONATO COMENTA COMO FORAM AS GRAVAÇÕES DA NOVELA “REIS”"
+                                href="https://marramaque.live/index.php/2022/05/18/biel-marconato-comenta-como-foram-as-gravacoes-da-novela-reis/"
+                                p="O ator mirim Biel Marconato estreou na Record TV e conta como foi participar das gravações da novela “Reis”, e afirma: “Logo que cheguei, comecei a me sentir em casa” ..."
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={
+                                    {
+                                        src: JardinsMaravilhas.src,
+                                        alt: "Biel no Jardim das maravilhas de Miró"
+                                    }
+                                }
+                                title="Extra Globo"
+                                popacitylow="Atores mirins conferem a exposição 'O Jardim das Maravilhas de Miró', no Rio"
+                                href="https://extra.globo.com/tv-e-lazer/atores-mirins-conferem-exposicao-jardim-das-maravilhas-de-miro-no-rio-25365173.html"
+                                p="Atores mirins foram conferir a exposição 'O Jardim das Maravilhas de Miró', que acaba de chegar ao Rio. Sucesso de público em São Paulo, a mostra está disponível no Rio Design Barra ..."
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={
+                                    { 
+                                        src: "https://modelbrazil.com.br/wp-content/uploads/2021/11/7EDCF1C1-9758-475F-A1F5-04B99843315D-213x300.jpeg",
+                                        alt: "Biel Maronato Model Brazil",
+                                        style: { objectPosition: "top center" }
+                                    }
+                                }
+
+                                title="Biel Marconato Model Brazil"
+                                popacitylow="Gabriel Marconato: O modelo que aos 10 anos considerado uma grande promessa no mercado fashion e publicitário"
+                                p="Quem é hoje o BieL Marconato ?
+                        •Gabriel Marconato Ramos chamado carinhosamente pelos amigos BieL está com 10 anos ( 29/01/2011) ..."
+                                
+                                href="https://modelbrazil.com.br/gabriel-marconato-o-modelo-que-aos-10-anos-considerado-uma-grande-promessa-no-mercado-fashion-e-publicitario/"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={{ src: "https://observatoriodatv.uol.com.br/wp-content/uploads/2022/02/biel-marconato.jpg", alt: "Biel Marconato Observatório da TV" }}
+
+                                title="Observatório da TV"
+                                popacitylow="Estrela mirim da Record TV, Biel Marconato ganha festa de aniversário surpresa de Os Chocolix"
+                                p="Uma das estrelas do casting mirim da Record TV, o ator Biel Marconato, completou 11 anos no último final de semana no parque indoor Game Station em São Paulo."
+                                href="https://observatoriodatv.uol.com.br/colunas/anddreh-ponttez/estrela-mirim-da-record-tv-biel-marconato-ganha-festa-de-aniversario-surpresa-de-os-chocolix"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={
+                                    {
+                                        src: "https://vimagazine.com.br/wp-content/uploads/2022/02/festa-Biel-4-1024x683.jpg",
+                                        alt: "Biel Marconato Vimagazine"
+                                    }
+                                }
+                                title="Vimagazine"
+                                popacitylow="Estrela mirim da Record TV Biel Marconato completou 11 anos com comemoração cheia de famosos"
+                                p="Uma das estrelas do casting mirim da Record TV, o ator Biel Marconato, completou 11 anos e comemorou no parque indoor Game Station em São Paulo, com diversos amigos e parceiros."
+                                href="https://vimagazine.com.br/?p=2995"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={
+                                    {
+                                        src: "https://timesbrasilia.com.br/wp-content/uploads/2022/02/festa-Biel-4-768x512.jpg",
+                                        alt: "Biel Marconato times Brasilia"
+                                    }
+                                }
+                                title="Times Brasilia"
+                                popacitylow="Estrela mirim da Record TV Biel Marconato completou 11 anos com comemoração cheia de famosos"
+                                p="Uma das estrelas do casting mirim da Record TV, o ator Biel Marconato, completou 11 anos e comemorou no parque indoor Game Station em São Paulo, com diversos amigos e parceiros."
+                                href="https://timesbrasilia.com.br/destaque/estrela-mirim-da-record-tv-biel-marconato-completou-11-anos-com-comemoracao-cheia-de-famosos/"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={
+                                    {
+                                        src: "https://culturaenegocios.com.br/wp-content/uploads/2022/02/Captura-de-tela-2022-02-09-151243-1200x600.png",
+                                        alt: "Biel Marconato em Cultura e Negócios"
+                                    }
+                                }
+                                title="Cultura e Negócios"
+                                popacitylow="Estrela mirim da Record TV Biel Marconato completou 11 anos com comemoração cheia de famosos"
+                                p="Uma das estrelas do casting mirim da Record TV, o ator Biel Marconato, completou 11 anos e comemorou no parque indoor Game Station em São Paulo, com diversos amigos e parceiros"
+                                href="https://culturaenegocios.com.br/estrela-mirim-da-record-tv-biel-marconato-completou-11-anos-com-comemoracao-cheia-de-famosos/"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={
+                                    {
+                                        src: HarryP.src,
+                                        alt: "Biel Marconato em Expresso News Instragram"
+                                    }
+                                }
+                                title="Expresso News"
+                                popacitylow="Escalado para a próxima novela bíblica da emissora 'Reis'"
+                                p="Biel vem se destacando cada vez mais no teatro, TV e cinema. Na televisão já atuou em 'As Aventuras de Poliana' do SBT e na série 'Bugados' no Globoplay"
+                                href="https://www.instagram.com/p/CZzTW0eO78W/?utm_medium=copy_link"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={
+                                    {
+                                        src: "https://revistapan.com.br/wp-content/uploads/2022/02/festa-Biel-5.jpg",
+                                        alt: "Biel Marconato no parque indoor Game Station"
+                                    }
+                                }
+                                title="PAN"
+                                popacitylow="Estrela mirim da Record TV Biel Marconato completou 11 anos com comemoração cheia de famosos"
+                                p="Uma das estrelas do casting mirim da Record TV, o ator Biel Marconato, completou 11 anos e comemorou no parque indoor Game Station em São Paulo, com diversos amigos e parceiros."
+                                href="https://revistapan.com.br/estrela-mirim-da-record-tv-biel-marconato-completou-11-anos-com-comemoracao-cheia-de-famosos/"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={
+                                    {
+                                        src: "https://timesbrasilia.com.br/wp-content/uploads/2022/05/biel-reis-1.jpeg",
+                                        alt: "Biel Marconato Record"
+                                    }
+                                }
+                                title="Times Brasilia"
+                                popacitylow="Biel Marconato comenta como foram as gravações da novela “Reis”"
+                                p="O ator mirim Biel Marconato estreou na Record TV e conta como foi participar das gravações da novela “Reis”, e afirma: “Logo que cheguei, comecei a me sentir em casa”."
+                                href="https://timesbrasilia.com.br/cultura/biel-marconato-comenta-como-foram-as-gravacoes-da-novela-reis/"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={{ src: "https://release.celebs.com.br/medias/posts/big/23218/1-4.jpg", alt: "Biel na record" }}
+
+                                title="Celebs"
+                                popacitylow="O ator mirim Biel Marconato estreou na Record TV e conta como foi participar das gravações da novela “Reis”, e afirma: 'Logo que cheguei, comecei a me sentir em casa'."
+                                p="O ator mirim, de apenas 11 anos de idade, fez aulas de interpretação para novelas bíblicas, o que o ajudou muito na hora de construir seu personagem ..."
+                                href="https://celebs.com.br/7400/biel-marconato-comenta-como-foram-as-gravacoes-da-novela-reis/"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={{ src: "https://www.correiodopovo.com.br/image/policy:1.825305:1653053746/.jpeg?f=2x1&$p$f=2be3c1c&w=2400&$w=d2ad2f2", alt: "" }}
+                                title="Correio do povo"
+                                popacitylow="Biel Marconato comenta como foram as gravações da primeira parte da novela “Reis” da Record TV"
+                                p="Eu lembro que tinha acabado de entrar em casa depois de passar o dia brincando e minha mãe recebeu uma mensagem dizendo que eu ia participar do elenco da novela “Reis”, como Ner, eu chorei muito de gratidão”."
+                                href=""
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={{ src: "https://revistapan.com.br/wp-content/uploads/2022/05/biel-reis-1.jpeg", alt: "Biel Record" }}
+                                title="Revista PAN"
+                                popacitylow="Biel Marconato comenta como foram as gravações da novela “Reis”                               "
+                                p="O ator mirim Biel Marconato estreou na Record TV e conta como foi participar das gravações da novela “Reis”, e afirma: “Logo que cheguei, comecei a me sentir em casa”."
+                                href="https://revistapan.com.br/biel-marconato-comenta-como-foram-as-gravacoes-da-novela-reis/"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={{ src: "https://cdn.abcdoabc.com.br/biel_743d4492.jpg", alt: "Biel novela reis" }}
+                                title="Abc do abc"
+                                popacitylow="O ator mirim Biel Marconato viveu a primeira fase de um soldado notável israelita que defende seu povo na novela"
+                                p="“Eu lembro que tinha acabado de entrar em casa depois de passar o dia brincando e minha mãe recebeu uma mensagem dizendo que eu ia participar do elenco da novela “Reis”, como NER ..."
+                                href="https://www.abcdoabc.com.br/brasil-mundo/noticia/biel-marconato-comenta-como-foram-gravacoes-novela-reis-record-tv-157790"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={{ src: "https://media.jornaldooeste.com.br/2022/05/30765d4b-image001-3.jpg", alt: "Novela reis Biel Marconato" }}
+                                title="Jornal do oeste"
+                                popacitylow="Estreante na Record TV Biel Marconato comenta sobre as gravações da novela “Reis”                                "
+                                p="Estreante na Record TV, o ator mirim Biel Marconato comenta sobre as gravações da novela “Reis” e afirma “Já comecei a me sentir em casa!”.                                "
+                                href="https://www.jornaldooeste.com.br/variedades/estreante-na-record-tv-biel-marconato-comenta-sobre-as-gravacoes-da-novela-reis/"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={{ src: "https://culturaenegocios.com.br/wp-content/uploads/2022/05/biel-reis-1-640x400.jpeg", alt: "Biel Record" }}
+                                title="Cultura e Negócios"
+                                popacitylow="Biel Marconato comenta como foram as gravações da novela “Reis”"
+                                p="O ator mirim Biel Marconato estreou na Record TV e conta como foi participar das gravações da novela “Reis”, e afirma: “Logo que cheguei, comecei a me sentir em casa”"
+                                href="https://culturaenegocios.com.br/biel-marconato-comenta-como-foram-as-gravacoes-da-novela-reis/"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={{ src: "https://portaldosfamosos.com.br/wp-content/uploads/2022/05/biel-reis-2.jpeg", alt: "" }}
+                                title="Portal dos famosos"
+                                popacitylow="Biel Marconato comenta como foram as gravações da primeira parte da novela “Reis” da Record TV"
+                                p="“Eu lembro que tinha acabado de entrar em casa depois de passar o dia brincando e minha mãe recebeu uma mensagem dizendo que eu ia participar do elenco da novela “Reis”, como NER, eu chorei muito de gratidão”."
+                                href="https://portaldosfamosos.com.br/2022/05/22/biel-marconato-comenta-como-foram-as-gravacoes-da-primeira-parte-da-novela-reis-da-record-tv/"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={{ src: "https://noticias.sorocaba.sp.gov.br/wp-content/uploads/2022/05/noticias.sorocaba.sp.gov.br-secretaria-de-cultura-de-sorocaba-recebe-visita-do-ator-mirim-biel-marconato-whatsapp-image-2022-05-27-at-12.40.51.jpeg", alt: "Biel na secretaria de cultura de sorocaba" }}
+                                title="Secretaria de Cultura de Sorocaba"
+                                popacitylow="Secretaria de Cultura de Sorocaba recebe visita do ator mirim Biel Marconato"
+                                p="A Secretaria de Cultura (Secult), representada pelo secretário Luiz Antonio Zamuner, recebeu, nesta semana, a visita do ator mirim Biel Marconato, de 11 anos, no Chalé Francês, localizado no Centro de Sorocaba."
+                                href="https://noticias.sorocaba.sp.gov.br/secretaria-de-cultura-de-sorocaba-recebe-visita-do-ator-mirim-biel-marconato/"
+                            />
+                        </article>
+                    </li>
+                </ul>
+            </section>
+        </>
+    )
 }

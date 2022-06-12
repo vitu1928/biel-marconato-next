@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
 @import "../components/aparicoes/style.scss";
 @import "../components/parallax/style.scss";
+@import "../components/imgbox/style.scss";
 
 @font-face {
   font-family: 'Sheep Sans';
@@ -183,6 +184,16 @@ div#tr[data-inviewport="slide-p-in"].is-inViewport {
         "BielRiste  BielCulos BielSentado" 
         "Bielcruzado Bielolhar  BielRio";
     }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;    
+        flex-wrap: wrap;
+
+        overflow-x: unset;
+    }
 }
 
 @media only screen and (max-width: 865px) {
@@ -190,6 +201,7 @@ div#tr[data-inviewport="slide-p-in"].is-inViewport {
         &#aparicoes {
             grid-template: "gallery1 gallery2" "img1 img2";
         }
+
         &#galeria {
             grid-template: 
             "BielLiz BielLiz BielLiz" 
@@ -199,11 +211,24 @@ div#tr[data-inviewport="slide-p-in"].is-inViewport {
             "BielRio BielRio BielRio"
             "Bielolhar Bielolhar Bielolhar";
         }
+
         &#sobre {
             flex-wrap: wrap;
         }
+
         &#artista div {
             grid-row: auto;
+        }
+        
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;    
+            
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            scroll-behavior: smooth;
         }
     }
 }
