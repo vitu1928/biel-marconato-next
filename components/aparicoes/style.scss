@@ -77,7 +77,7 @@ section#aparicoes > div.interact {
   anim
   */
   @keyframes o {
-    from {transform:translate(0);}
+    from { transform: translate(0); }
   }
 
   li:nth-of-type(odd) a {
@@ -101,10 +101,11 @@ section#aparicoes > div.interact {
   }
 
   img {
-    animation:blr 2s;
-    filter:blur(10px);
-  } @keyframes blr {
-    from {filter:blur(0)}
+    animation: blr 2s;
+    filter: blur(10px);
+  } 
+  @keyframes blr {
+    from { filter: blur(0) }
   }
 
 

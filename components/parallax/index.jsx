@@ -11,7 +11,7 @@ export default function Parallax() {
                         <Link href="#sobre">Sobre</Link>
                         <Link href="#artista">Artista</Link>
                         <Link href="#galeria">Galeria</Link>
-                        <Link href="#aparicoes">Aparições na mídia</Link>
+                        <Link href="#aparicoes">Na mídia</Link>
                         <Link href="#contatos">Contatos</Link>
                     </nav>
                 </details>  

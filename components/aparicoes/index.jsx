@@ -8,7 +8,7 @@ export default function Aparicoes() {
   return (
     <>
       <h2>
-        Aparições na mídia
+        Na mídia
       </h2>
       <section id="aparicoes"> 
         <div style={{gridArea: "img1"}}>
