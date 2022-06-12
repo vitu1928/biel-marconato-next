@@ -1,14 +1,12 @@
 // Biels
-import BielaA1 from "../../public/Biels/BielaA1.jpg"
-import Bielcruzado from "../../public/Biels/Bielcruzado.jpg"
-import BielCulos from "../../public/Biels/BielCulos.jpg"
-import BielNé from "../../public/Biels/BielNé.jpeg"
-import Bielolhar from "../../public/Biels/Bielolhar.jpg"
-import BielRio from "../../public/Biels/BielRio.jpg"
-import BielS2 from "../../public/Biels/BielS2.jpg"
-import BielSentado from "../../public/Biels/BielSentado.jpeg"
-import BielLiz from "../../public/Biels/BielLiz.jpeg"
-import BielRiste from "../../public/Biels/BielRiste.jpg" // Guerra civil
+import Bielcruzado from "../../public/Imagens/Biels/Bielcruzado.jpg"
+import BielCulos from "../../public/Imagens/Biels/BielCulos.jpg"
+import BielLiz from "../../public/Imagens/Biels/BielLiz.jpeg"
+import Bielolhar from "../../public/Imagens/Biels/Bielolhar.jpg"
+import BielRio from "../../public/Imagens/Biels/BielRio.jpg"
+import BielRiste from "../../public/Imagens/Biels/BielRiste.jpg"; // Guerra civil
+import BielS2 from "../../public/Imagens/Biels/BielS2.jpg"
+import BielSentado from "../../public/Imagens/Biels/BielSentado.jpeg"
 
 import Image from 'next/image'
 

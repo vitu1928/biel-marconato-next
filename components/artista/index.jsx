@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
 // Trabalhos Recentes
+import BielRiste from "../../public/Imagens/Biels/BielRiste.jpg"; // Guerra civil
 import NovelaReis from "../../public/Imagens/NovelaReis.jpg"
 import Vicente from "../../public/Imagens/Vicente.jpg"
-import BielRiste from "../../public/Biels/BielRiste.jpg" // Guerra civil
 
 export default function Artista() {
     return (

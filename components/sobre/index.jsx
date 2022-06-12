@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import BielOlhar from "../../public/Biels/Bielolhar.jpg"
+import BielOlhar from "../../public/Imagens/Biels/Bielolhar.jpg"
 
 export default function Sobre() {
     return (
