@@ -27,7 +27,7 @@ export default function Imgbox(props) {
             onMouseEnter={() => setTimeout(set)}
             onMouseLeave={unset}
         >
-            <div clasNames="img-box">
+            <div className="img-box">
                 <img {...props.img} />
                 <span>{props.title}</span>
                 <div className="transparent-box">
