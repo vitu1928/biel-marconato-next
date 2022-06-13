@@ -17,6 +17,17 @@ export default function Aparicoes() {
                     <li>
                         <article>
                             <Imgbox
+                                img={{ src: "https://media.jornaldooeste.com.br/2022/05/30765d4b-image001-3.jpg", alt: "Novela reis Biel Marconato" }}
+                                title="Jornal do oeste"
+                                popacitylow="Estreante na Record TV Biel Marconato comenta sobre as gravações da novela “Reis”                                "
+                                p="Estreante na Record TV, o ator mirim Biel Marconato comenta sobre as gravações da novela “Reis” e afirma “Já comecei a me sentir em casa!”.                                "
+                                href="https://www.jornaldooeste.com.br/variedades/estreante-na-record-tv-biel-marconato-comenta-sobre-as-gravacoes-da-novela-reis/"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
                                 img={{ src: "https://marramaque.live/wp-content/uploads/2022/05/biel-reis-1.jpeg" }}
                                 title="Marramaque"
                                 popacitylow="BIEL MARCONATO COMENTA COMO FORAM AS GRAVAÇÕES DA NOVELA “REIS”"
@@ -100,6 +111,7 @@ export default function Aparicoes() {
                                 }
                                 title="Times Brasilia"
                                 popacitylow="Estrela mirim da Record TV Biel Marconato completou 11 anos com comemoração cheia de famosos"
+
                                 p="Uma das estrelas do casting mirim da Record TV, o ator Biel Marconato, completou 11 anos e comemorou no parque indoor Game Station em São Paulo, com diversos amigos e parceiros."
                                 href="https://timesbrasilia.com.br/destaque/estrela-mirim-da-record-tv-biel-marconato-completou-11-anos-com-comemoracao-cheia-de-famosos/"
                             />
@@ -211,17 +223,6 @@ export default function Aparicoes() {
                                 popacitylow="O ator mirim Biel Marconato viveu a primeira fase de um soldado notável israelita que defende seu povo na novela"
                                 p="“Eu lembro que tinha acabado de entrar em casa depois de passar o dia brincando e minha mãe recebeu uma mensagem dizendo que eu ia participar do elenco da novela “Reis”, como NER ..."
                                 href="https://www.abcdoabc.com.br/brasil-mundo/noticia/biel-marconato-comenta-como-foram-gravacoes-novela-reis-record-tv-157790"
-                            />
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <Imgbox
-                                img={{ src: "https://media.jornaldooeste.com.br/2022/05/30765d4b-image001-3.jpg", alt: "Novela reis Biel Marconato" }}
-                                title="Jornal do oeste"
-                                popacitylow="Estreante na Record TV Biel Marconato comenta sobre as gravações da novela “Reis”                                "
-                                p="Estreante na Record TV, o ator mirim Biel Marconato comenta sobre as gravações da novela “Reis” e afirma “Já comecei a me sentir em casa!”.                                "
-                                href="https://www.jornaldooeste.com.br/variedades/estreante-na-record-tv-biel-marconato-comenta-sobre-as-gravacoes-da-novela-reis/"
                             />
                         </article>
                     </li>

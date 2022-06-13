@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
-@import "../components/aparicoes/style.scss";
+// @import "../components/aparicoes/style.scss";
 @import "../components/parallax/style.scss";
 @import "../components/imgbox/style.scss";
 
@@ -107,8 +107,8 @@ main {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            justify-content: center;
-            padding: 40px 0px;
+            justify-content: flex-start;
+            padding: 40px 5px;
         }
     }
 }
@@ -235,11 +235,12 @@ div#tr[data-inviewport="slide-p-in"].is-inViewport {
             display: flex;
             flex-direction: row;
             align-content: center;
-            justify-content: center;    
+            justify-content: flex-start;    
             
             overflow-x: auto;
             flex-wrap: nowrap;
             scroll-behavior: smooth;
+            width: 95%;
         }
     }
 }
