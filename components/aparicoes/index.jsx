@@ -17,6 +17,18 @@ export default function Aparicoes() {
                     <li>
                         <article>
                             <Imgbox
+                                img={{ src: "https://release.celebs.com.br/medias/posts/big/23952/1-38.jpg", alt: "Biel na record" }}
+
+                                title="Celebs"
+                                popacitylow="O ator mirim Biel Marconato aproveitou o dia de folga para um passeio de Maria Fumaça, na região de Campinas, interior de São Paulo."
+                                p="Biel aproveitou ao lado da família um passeio incrível na Maria Fumaça, saindo de Campinas e com paradas especiais pela região. Além de muita história sobre esses lugares, cantorias e comidas típicas."
+                                href="https://celebs.com.br/7691/biel-marconato-se-diverte-em-passeio-de-maria-fumaca-pela-regiao-de-campinas/"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
                                 img={{ src: "https://media.jornaldooeste.com.br/2022/05/30765d4b-image001-3.jpg", alt: "Novela reis Biel Marconato" }}
                                 title="Jornal do oeste"
                                 popacitylow="Estreante na Record TV Biel Marconato comenta sobre as gravações da novela “Reis”                                "
@@ -25,6 +37,58 @@ export default function Aparicoes() {
                             />
                         </article>
                     </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={
+                                    { 
+                                        src: "https://timesbrasilia.com.br/wp-content/uploads/2022/06/biel-maria-fumac-768x1024.jpeg",
+                                        alt: "Biel Maronato Times Brasilia trem",
+                                        style: { objectPosition: "top center" }
+                                    }
+                                }
+
+                                title="Times Brasilia"
+                                popacitylow="Biel Marconato se diverte em passeio de Maria Fumaça pela região de Campinas"
+                                p="O ator mirim Biel Marconato aproveitou o dia de folga para um passeio de Maria Fumaça, na região de Campinas, interior de São Paulo."
+                                
+                                href="https://timesbrasilia.com.br/cultura/biel-marconato-se-diverte-em-passeio-de-maria-fumaca-pela-regiao-de-campinas/"
+                            />
+                        </article>
+                    </li>  
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={
+                                    {
+                                        src: "https://timesbrasilia.com.br/wp-content/uploads/2022/05/biel-reis-1.jpeg",
+                                        alt: "Biel Marconato Record"
+                                    }
+                                }
+                                title="Times Brasilia"
+                                popacitylow="Biel Marconato comenta como foram as gravações da novela “Reis”"
+                                p="O ator mirim Biel Marconato estreou na Record TV e conta como foi participar das gravações da novela “Reis”, e afirma: “Logo que cheguei, comecei a me sentir em casa”."
+                                href="https://timesbrasilia.com.br/cultura/biel-marconato-comenta-como-foram-as-gravacoes-da-novela-reis/"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={
+                                    {
+                                        src: "https://timesbrasilia.com.br/wp-content/uploads/2022/02/festa-Biel-4-768x512.jpg",
+                                        alt: "Biel Marconato times Brasilia"
+                                    }
+                                }
+                                title="Times Brasilia"
+                                popacitylow="Estrela mirim da Record TV Biel Marconato completou 11 anos com comemoração cheia de famosos"
+
+                                p="Uma das estrelas do casting mirim da Record TV, o ator Biel Marconato, completou 11 anos e comemorou no parque indoor Game Station em São Paulo, com diversos amigos e parceiros."
+                                href="https://timesbrasilia.com.br/destaque/estrela-mirim-da-record-tv-biel-marconato-completou-11-anos-com-comemoracao-cheia-de-famosos/"
+                            />
+                        </article>
+                    </li> 
                     <li>
                         <article>
                             <Imgbox
@@ -63,7 +127,7 @@ export default function Aparicoes() {
                                     }
                                 }
 
-                                title="Biel Marconato Model Brazil"
+                                title="Model Brazil"
                                 popacitylow="Gabriel Marconato: O modelo que aos 10 anos considerado uma grande promessa no mercado fashion e publicitário"
                                 p="Quem é hoje o BieL Marconato ?
                         •Gabriel Marconato Ramos chamado carinhosamente pelos amigos BieL está com 10 anos ( 29/01/2011) ..."
@@ -105,55 +169,6 @@ export default function Aparicoes() {
                             <Imgbox
                                 img={
                                     {
-                                        src: "https://timesbrasilia.com.br/wp-content/uploads/2022/02/festa-Biel-4-768x512.jpg",
-                                        alt: "Biel Marconato times Brasilia"
-                                    }
-                                }
-                                title="Times Brasilia"
-                                popacitylow="Estrela mirim da Record TV Biel Marconato completou 11 anos com comemoração cheia de famosos"
-
-                                p="Uma das estrelas do casting mirim da Record TV, o ator Biel Marconato, completou 11 anos e comemorou no parque indoor Game Station em São Paulo, com diversos amigos e parceiros."
-                                href="https://timesbrasilia.com.br/destaque/estrela-mirim-da-record-tv-biel-marconato-completou-11-anos-com-comemoracao-cheia-de-famosos/"
-                            />
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <Imgbox
-                                img={
-                                    {
-                                        src: "https://culturaenegocios.com.br/wp-content/uploads/2022/02/Captura-de-tela-2022-02-09-151243-1200x600.png",
-                                        alt: "Biel Marconato em Cultura e Negócios"
-                                    }
-                                }
-                                title="Cultura e Negócios"
-                                popacitylow="Estrela mirim da Record TV Biel Marconato completou 11 anos com comemoração cheia de famosos"
-                                p="Uma das estrelas do casting mirim da Record TV, o ator Biel Marconato, completou 11 anos e comemorou no parque indoor Game Station em São Paulo, com diversos amigos e parceiros"
-                                href="https://culturaenegocios.com.br/estrela-mirim-da-record-tv-biel-marconato-completou-11-anos-com-comemoracao-cheia-de-famosos/"
-                            />
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <Imgbox
-                                img={
-                                    {
-                                        src: HarryP.src,
-                                        alt: "Biel Marconato em Expresso News Instragram"
-                                    }
-                                }
-                                title="Expresso News"
-                                popacitylow="Escalado para a próxima novela bíblica da emissora 'Reis'"
-                                p="Biel vem se destacando cada vez mais no teatro, TV e cinema. Na televisão já atuou em 'As Aventuras de Poliana' do SBT e na série 'Bugados' no Globoplay"
-                                href="https://www.instagram.com/p/CZzTW0eO78W/?utm_medium=copy_link"
-                            />
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <Imgbox
-                                img={
-                                    {
                                         src: "https://revistapan.com.br/wp-content/uploads/2022/02/festa-Biel-5.jpg",
                                         alt: "Biel Marconato no parque indoor Game Station"
                                     }
@@ -170,14 +185,14 @@ export default function Aparicoes() {
                             <Imgbox
                                 img={
                                     {
-                                        src: "https://timesbrasilia.com.br/wp-content/uploads/2022/05/biel-reis-1.jpeg",
-                                        alt: "Biel Marconato Record"
+                                        src: HarryP.src,
+                                        alt: "Biel Marconato em Expresso News Instragram"
                                     }
                                 }
-                                title="Times Brasilia"
-                                popacitylow="Biel Marconato comenta como foram as gravações da novela “Reis”"
-                                p="O ator mirim Biel Marconato estreou na Record TV e conta como foi participar das gravações da novela “Reis”, e afirma: “Logo que cheguei, comecei a me sentir em casa”."
-                                href="https://timesbrasilia.com.br/cultura/biel-marconato-comenta-como-foram-as-gravacoes-da-novela-reis/"
+                                title="Expresso News"
+                                popacitylow="Escalado para a próxima novela bíblica da emissora 'Reis'"
+                                p="Biel vem se destacando cada vez mais no teatro, TV e cinema. Na televisão já atuou em 'As Aventuras de Poliana' do SBT e na série 'Bugados' no Globoplay"
+                                href="https://www.instagram.com/p/CZzTW0eO78W/?utm_medium=copy_link"
                             />
                         </article>
                     </li>
@@ -245,6 +260,22 @@ export default function Aparicoes() {
                                 popacitylow="Biel Marconato comenta como foram as gravações da primeira parte da novela “Reis” da Record TV"
                                 p="“Eu lembro que tinha acabado de entrar em casa depois de passar o dia brincando e minha mãe recebeu uma mensagem dizendo que eu ia participar do elenco da novela “Reis”, como NER, eu chorei muito de gratidão”."
                                 href="https://portaldosfamosos.com.br/2022/05/22/biel-marconato-comenta-como-foram-as-gravacoes-da-primeira-parte-da-novela-reis-da-record-tv/"
+                            />
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <Imgbox
+                                img={
+                                    {
+                                        src: "https://culturaenegocios.com.br/wp-content/uploads/2022/02/Captura-de-tela-2022-02-09-151243-1200x600.png",
+                                        alt: "Biel Marconato em Cultura e Negócios"
+                                    }
+                                }
+                                title="Cultura e Negócios"
+                                popacitylow="Estrela mirim da Record TV Biel Marconato completou 11 anos com comemoração cheia de famosos"
+                                p="Uma das estrelas do casting mirim da Record TV, o ator Biel Marconato, completou 11 anos e comemorou no parque indoor Game Station em São Paulo, com diversos amigos e parceiros"
+                                href="https://culturaenegocios.com.br/estrela-mirim-da-record-tv-biel-marconato-completou-11-anos-com-comemoracao-cheia-de-famosos/"
                             />
                         </article>
                     </li>
