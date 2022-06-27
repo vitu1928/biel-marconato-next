@@ -191,9 +191,12 @@ div#tr[data-inviewport="slide-p-in"].is-inViewport {
 @media only screen and (min-width: 865px) {
     section#galeria {
         grid-template: 
-        "BielLiz BielLiz  BielS2" 
-        "BielRiste  BielCulos BielSentado" 
-        "Bielcruzado Bielolhar  BielRio";
+        "BielParqueSentado BielParqueSentado BielParqueSentado"
+        "BielAzulSentado BielAzulSentado BielAzulSentado"
+        "BielLiz BielLiz BielPoste"
+        "BielRiste BielS2 BielSentado" 
+        "Bielcruzado Bielolhar BielRio"
+       ;
     }
 
     ul {
@@ -220,7 +223,9 @@ div#tr[data-inviewport="slide-p-in"].is-inViewport {
             "BielCulos BielCulos BielCulos"
             "Bielcruzado Bielcruzado Bielcruzado"
             "BielRio BielRio BielRio"
-            "Bielolhar Bielolhar Bielolhar";
+            "Bielolhar Bielolhar Bielolhar"
+            "BielParqueSentado BielParqueSentado BielPoste"
+            "BielAzulSentado BielAzulSentado BielAzulSentado";
         }
 
         &#sobre {

@@ -1,12 +1,14 @@
 // Biels
 import Bielcruzado from "../../public/Imagens/Biels/Bielcruzado.jpg"
-import BielCulos from "../../public/Imagens/Biels/BielCulos.jpg"
 import BielLiz from "../../public/Imagens/Biels/BielLiz.jpeg"
 import Bielolhar from "../../public/Imagens/Biels/Bielolhar.jpg"
 import BielRio from "../../public/Imagens/Biels/BielRio.jpg"
 import BielRiste from "../../public/Imagens/Biels/BielRiste.jpg"; // Guerra civil
 import BielS2 from "../../public/Imagens/Biels/BielS2.jpg"
 import BielSentado from "../../public/Imagens/Biels/BielSentado.jpeg"
+import BielSentadoParque from "../../public/Imagens/Biels/BielParqueSentado.jpg"
+import BielAzulSentado from "../../public/Imagens/Biels/BielAzulSentado.jpg"
+import BielPoste from "../../public/Imagens/Biels/BielPoste.jpg"
 
 import Image from 'next/image'
 
@@ -16,19 +18,18 @@ export default function Galeria() {
             <h2>Galeria</h2>
             <section id="galeria">
             {[
+
                 BielLiz,
 
                 BielS2,
                 BielRiste,
                 BielSentado,
                 
-                // BielOlhar,
+                BielSentadoParque,
+                BielPoste,
+                BielAzulSentado,
 
-                // BielaA1,
-                
-                // BielNé,
-                BielCulos,
-                Bielcruzado,
+                    Bielcruzado,
                 Bielolhar,
                 BielRio,
             ].map((v, index) => 
