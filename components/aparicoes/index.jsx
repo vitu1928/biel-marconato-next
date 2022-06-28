@@ -20,7 +20,7 @@ export default function Aparicoes() {
                             <Imgbox
                                 img={{ src: "https://gazetadanoticia.com.br/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-20-at-13.57.43.jpeg", alt: "Biel no teatro" }}
 
-                                title="Gozeta da noticia"
+                                title="Gazeta da noticia"
                                 popacitylow="Gabriel Marconato Fala Sobre Estreia No Teatro: “Foi Uma Experiência Muito Legal”                                "
                                 p="Aos 11 anos, o ator Gabriel Marconato só tem motivos para celebrar. Ele estreou recentemente seu primeiro espetáculo nos teatros.
                                 “Foi uma experiência muito legal, fiquei aflito quando o personagem ‘Sem Nome’ roubou o macaco (risos), isso me deu um desespero, eu gritava bem alto pra ver se o Stephen ouvia”, conta."
