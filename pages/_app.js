@@ -12,8 +12,8 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="keywords" content="Biel Marconato, Novela Reis" />
         <meta name="author" content="Victor Torrens" />
         <meta property="og:image" content="https://arquivos-elencodigital.s3.sa-east-1.amazonaws.com/imagens/elenco/60cfdd46cea2c_162423533460cfdd467652d.jpeg" key="image" />
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        <meta http-equiv="content-language" content="pt-br" />
+        <meta httpEquiv="content-type" content="text/html; charset=UTF-8" />
+        <meta httpEquiv="content-language" content="pt-br" />
       </Head>
       <Component {...pageProps} />
     </>
