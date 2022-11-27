@@ -26,6 +26,7 @@ export default function Artista() {
                 <p><strong>Filme</strong>: Vicente na cidade Fantasma 
                 Personagem: Vicente (protagonista)</p>
                 </div>
+<<<<<<< Updated upstream
                 <div>
                 <Image 
                     layout='intrinsic'
@@ -37,6 +38,28 @@ export default function Artista() {
                     data-inviewport="scale-in"
                 />
                 <p><strong>Novela:</strong> Reis</p>
+=======
+
+                <div data-inviewport="slide-p-in" id="tr">
+                    <h3>Trabalhos Realizados</h3>
+                    <p>
+                        <strong>Desfiles</strong>: Feira Opera 2020/21, Catwalk internacional,
+                        Aquarela Nacional, Passarela produção Brasil como
+                        Mister São Paulo.
+                    </p>
+                    <p>
+                        <strong>Catálogos e campanhas</strong>: Oliver Kids, Malwee, Hering, Ellus, Demanos, Puket, Pistol Star e Hershey&apos;s.
+                    </p>
+                    <p>
+                        <strong>Novelas</strong>: As aventuras de Poliana SBT e Novela Reis da Record tv.<br />
+                        <strong>Séries</strong>: Escolinha Ecológica NGT TV e Bugados Globo play.<br />
+                        <strong>TV</strong>: personagem LIPI na tv SKY, programa de humor infantil exibido todos os sábados<br />
+                        <strong>Comerciais</strong>: Prefeitura de Sorocaba, Itau, Bradesco.
+                    </p>
+                    <p>
+                        <strong>Editoriais</strong>: Villy Ribeiro, Luciana Kajaer, Márcio Falcão.
+                    </p>
+>>>>>>> Stashed changes
                 </div>
                 <div>
                 <Image 
