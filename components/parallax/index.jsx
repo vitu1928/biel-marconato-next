@@ -1,13 +1,14 @@
 import Link from "next/link"
 
+import { DivParallax, Details, Menu, Summary } from "./style.module.scss"
 
 export default function Parallax() {
     return (
-        <div id="parallax">
+        <div className={DivParallax}>       
             <div>
-                <details id="unique">
-                    <summary />
-                    <nav className="menu" onClick={({ target }) => target.parentElement.parentElement.open = false}>
+                <details className={Details} id="unique">
+                    <summary className={Summary}/>
+                    <nav className={Menu} onClick={({ target }) => target.parentElement.parentElement.open = false}>
                         <Link href="#sobre">Sobre</Link>
                         <Link href="#artista">Artista</Link>
                         <Link href="#galeria">Galeria</Link>

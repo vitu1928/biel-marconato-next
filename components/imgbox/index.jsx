@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+import { DivImgBox, TransparentBox, Caption, OpacityLow } from "./style.module.scss"
+
 export default function Imgbox(props) {
  // rel="_external" target="_blank"
     const [href, setHref] = useState("javascript:;")
@@ -27,13 +29,13 @@ export default function Imgbox(props) {
             onMouseEnter={() => setTimeout(set)}
             onMouseLeave={unset}
         >
-            <div class="img-box">
+            <div className={DivImgBox}>
                 <img {...props.img} />
                 <span>{props.title}</span>
-                <div class="transparent-box">
-                    <div class="caption">
+                <div className={TransparentBox}>
+                    <div className={Caption}>
                     <p>{props.title}</p>
-                    <p class="opacity-low">{props.popacitylow}</p>
+                    <p className={OpacityLow}>{props.popacitylow}</p>
                     <p>{props.p}</p>
                     </div>
                 </div>

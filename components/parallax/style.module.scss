@@ -2,7 +2,7 @@ $primColor: #dcdcdc;
 $secoColor: #555555;
 $cornerRad: 4px;
 
-div#parallax {
+.DivParallax {
     min-height: 100vh; /* "será que tem mais para ver no site? Menu!"*/
 
     background-image: url("/Imagens/Biels/BielaA1.jpg");
@@ -24,14 +24,14 @@ div#parallax {
     }
 }
 
-details {
+.Details {
     position: fixed;
     z-index: 1;
     margin: 40px;
     top: 10px;
     left: 10px;
 
-    &[open] .menu {
+    &[open] .Menu {
         animation-name: menuAnim;
     }
 
@@ -44,7 +44,7 @@ details {
     }
 }
 
-summary {
+.Summary {
     writing-mode: vertical-lr;
     text-align: center;
     padding: 12px 10px;
@@ -88,7 +88,7 @@ summary {
     }
 }
 
-.menu {
+.Menu {
     height: 0;
     width: fit-content;
     border-radius: $cornerRad;

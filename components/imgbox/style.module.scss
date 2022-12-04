@@ -1,4 +1,27 @@
-.img-box {
+.Caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    & > p:nth-child(2) {
+        font-size: 0.8em;
+    }
+}
+
+.TransparentBox {
+    height: 250px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+
+.DivImgBox {
     box-sizing: content-box;
     
     margin: 10px;
@@ -9,38 +32,18 @@
     color: white;
     position: relative;
     background-color: white;
-}
-
-.caption {
-    position: absolute;
-    bottom: 5px;
-    left: 20px;
-    opacity: 0.0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.transparent-box {
-    height: 250px;
-    width: 350px;
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: background-color 0.3s ease;
-}
-
-img {
-    object-fit: cover;
-    object-position: center center;
-
-    height: 250px;
-    width: 350px;
-    transition: transform 0.3s ease; 
-}
-
-.img-box {
+    
     box-shadow: 0px 0px 4px 0px #0000004d;
     border-radius: 25px;
+
+    img {
+        object-fit: cover;
+        object-position: center center;
+    
+        height: 250px;
+        width: 350px;
+        transition: transform 0.3s ease; 
+    }
 
     &:hover, &:active {
         cursor: pointer;
@@ -49,11 +52,11 @@ img {
             transform: scale(1.1);
         }
 
-        .transparent-box {
+        .TransparentBox {
             background-color: rgba(0, 0, 0, 0.5);
         }
 
-        .caption {
+        .Caption {
             transform: translateY(-20px);
             opacity: 1.0;
         }
@@ -84,10 +87,6 @@ img {
     }
 }
 
-.caption>p:nth-child(2) {
-    font-size: 0.8em;
-}
-
-.opacity-low {
+.OpacityLow {
     opacity: 0.5;
 }

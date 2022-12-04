@@ -1,7 +1,9 @@
 import HarryP from "../../public/Imagens/Aparicoes/HarryP.jpg"
 import JardinsMaravilhas from "../../public/Imagens/Aparicoes/JardinsMarvilhas.jpg"
 
+import { SectionAparicoes } from "./style.module.scss";
 import Imgbox from "../imgbox"
+
 
 export default function Aparicoes() {
 
@@ -10,11 +12,8 @@ export default function Aparicoes() {
             <h2>
                 Na mídia
             </h2>
-            <section id="aparicoes">
+            <section className={SectionAparicoes}>
                 <ul type="none">
-<<<<<<< Updated upstream
-=======
-
                     <li>
                         <article>
                             <Imgbox
@@ -103,7 +102,6 @@ export default function Aparicoes() {
                             />
                         </article>
                     </li> 
->>>>>>> Stashed changes
                     <li>
                         <article>
                             <Imgbox
@@ -188,7 +186,7 @@ export default function Aparicoes() {
                                         alt: "Biel Marconato times Brasilia"
                                     }
                                 }
-<<<<<<< Updated upstream
+ 
                                 title="Times Brasilia"
                                 popacitylow="Estrela mirim da Record TV Biel Marconato completou 11 anos com comemoração cheia de famosos"
                                 p="Uma das estrelas do casting mirim da Record TV, o ator Biel Marconato, completou 11 anos e comemorou no parque indoor Game Station em São Paulo, com diversos amigos e parceiros."
@@ -209,12 +207,7 @@ export default function Aparicoes() {
                                 popacitylow="Estrela mirim da Record TV Biel Marconato completou 11 anos com comemoração cheia de famosos"
                                 p="Uma das estrelas do casting mirim da Record TV, o ator Biel Marconato, completou 11 anos e comemorou no parque indoor Game Station em São Paulo, com diversos amigos e parceiros"
                                 href="https://culturaenegocios.com.br/estrela-mirim-da-record-tv-biel-marconato-completou-11-anos-com-comemoracao-cheia-de-famosos/"
-=======
-                                title="PAN"
-                                popacitylow="Estrela mirim da Record TV Biel Marconato completou 10 anos com comemoração cheia de famosos"
-                                p="Uma das estrelas do casting mirim da Record TV, o ator Biel Marconato, completou 10 anos e comemorou no parque indoor Game Station em São Paulo, com diversos amigos e parceiros."
-                                href="https://revistapan.com.br/estrela-mirim-da-record-tv-biel-marconato-completou-11-anos-com-comemoracao-cheia-de-famosos/"
->>>>>>> Stashed changes
+
                             />
                         </article>
                     </li>
@@ -347,8 +340,6 @@ export default function Aparicoes() {
                     <li>
                         <article>
                             <Imgbox
-<<<<<<< Updated upstream
-=======
                                 img={
                                     {
                                         src: "https://culturaenegocios.com.br/wp-content/uploads/2022/02/Captura-de-tela-2022-02-09-151243-1200x600.png",
@@ -365,7 +356,6 @@ export default function Aparicoes() {
                     <li>
                         <article>
                             <Imgbox
->>>>>>> Stashed changes
                                 img={{ src: "https://noticias.sorocaba.sp.gov.br/wp-content/uploads/2022/05/noticias.sorocaba.sp.gov.br-secretaria-de-cultura-de-sorocaba-recebe-visita-do-ator-mirim-biel-marconato-whatsapp-image-2022-05-27-at-12.40.51.jpeg", alt: "Biel na secretaria de cultura de sorocaba" }}
                                 title="Secretaria de Cultura de Sorocaba"
                                 popacitylow="Secretaria de Cultura de Sorocaba recebe visita do ator mirim Biel Marconato"

@@ -1,5 +1,3 @@
-import Head from 'next/head'
-
 // Estudos
 import Teatro from "../public/Imagens/teatro.jpg"
 // import Cinema from "../public/Imagens/cinema.jpg"
@@ -23,10 +21,10 @@ export default function Home() {
         entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
       });
     };
-    
+
     const Obs = new IntersectionObserver(inViewport);
     const obsOptions = {};
-    
+
     // Attach observer to every [data-inviewport] element:
     const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
     ELs_inViewport.forEach(EL => {
@@ -35,15 +33,9 @@ export default function Home() {
   }, [])
 
   return (
-    <div>
-      <Head>
-        <title>Biel Marconato</title>
-        <meta name="description" content="Biel Marconato Web site" />
-        <link rel="icon" href="Biels/favicon-32x32.png"/>
-      </Head>
-
+    <>
       <Parallax />
-      <main>   
+      <main>
         <Sobre />
         <hr />
         <Artista />
@@ -60,6 +52,6 @@ export default function Home() {
           </p>
         </div>
       </footer>
-    </div>
+    </>
   )
 }
