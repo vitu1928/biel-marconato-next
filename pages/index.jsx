@@ -1,3 +1,6 @@
+import { motion } from 'framer-motion'
+import { useEffect } from 'react'
+
 // Estudos
 import Teatro from "../public/Imagens/teatro.jpg"
 // import Cinema from "../public/Imagens/cinema.jpg"
@@ -5,14 +8,11 @@ import Piano from "../public/Imagens/piano.jpg"
 import Sapateado from "../public/Imagens/sapateado.jpg"
 
 // Components
-import Aparicoes from '../components/aparicoes'
-import Artista from '../components/artista'
-import Contatos from '../components/contatos'
-import Galeria from '../components/galeria'
 import Parallax from '../components/parallax'
+import Aparicoes from '../components/aparicoes'
+import Artista from './artista'
+import Galeria from './galeria'
 import Sobre from '../components/sobre'
-
-import { useEffect } from 'react'
 
 export default function Home() {
   useEffect(() => {
@@ -34,24 +34,15 @@ export default function Home() {
 
   return (
     <>
-      <Parallax />
-      <main>
+
+      
+        <Parallax />
         <Sobre />
         <hr />
         <Artista />
         <hr />
-        <Galeria />
         <Aparicoes />
-      </main>
-      <footer>
-        <Contatos />
 
-        <div id="by">
-          <p>
-            <address>2022 © por Victor</address>
-          </p>
-        </div>
-      </footer>
     </>
   )
 }
