@@ -1,3 +1,4 @@
+import Image from 'next/image'
 // Biels
 import Bielcruzado from "../../public/Imagens/Biels/Bielcruzado.jpg"
 import BielCulos from "../../public/Imagens/Biels/BielCulos.jpg"
@@ -8,11 +9,13 @@ import BielRiste from "../../public/Imagens/Biels/BielRiste.jpg"; // Guerra civi
 import BielS2 from "../../public/Imagens/Biels/BielS2.jpg"
 import BielSentado from "../../public/Imagens/Biels/BielSentado.jpeg"
 
-import Image from 'next/image'
+import Parallax from '../../components/parallax'
+import Transitions from '../../components/transicao'
 
 export default function Galeria() {
     return (
-        <>
+        <Transitions>
+            <Parallax imgSrc={Bielcruzado.src} title="Galeria"/>
             <h2>Galeria</h2>
             <section id="galeria">
             {[
@@ -49,6 +52,6 @@ export default function Galeria() {
                 </div>
             )}
             </section>
-        </>
+        </Transitions>
     )
 }

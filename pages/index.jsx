@@ -11,8 +11,10 @@ import Sapateado from "../public/Imagens/sapateado.jpg"
 import Parallax from '../components/parallax'
 import Aparicoes from '../components/aparicoes'
 import Artista from './artista'
-import Galeria from './galeria'
 import Sobre from '../components/sobre'
+
+import BielA1 from "../public/Imagens/Biels/BielaA1.jpg";
+import Transitions from '../components/transicao'
 
 export default function Home() {
   useEffect(() => {
@@ -33,16 +35,16 @@ export default function Home() {
   }, [])
 
   return (
-    <>
-
-      
-        <Parallax />
+    <Transitions>
+        <Parallax 
+          imgSrc={BielA1.src}
+          title="ator - modelo - influencer"
+          />
         <Sobre />
         <hr />
         <Artista />
         <hr />
         <Aparicoes />
-
-    </>
+    </Transitions>
   )
 }

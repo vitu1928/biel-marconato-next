@@ -33,18 +33,9 @@ export default function MyApp({ Component, pageProps }) {
     <link rel="icon" href="Imagens/Biels/favicon-32x32.png" />
 
     <Menu />
-    <motion.main
-        initial="hidden"
-        animate="enter"
-        exit="exit"
-        variants={{
-          hidden: { opacity: 0, x: -200, y: 0 },
-          enter: { opacity: 1, x: 0, y: 0 },
-          exit: { opacity: 0, x: 0, y: -100 },
-        }}
-        transition={{ type: 'linear' }}
-        onExitComplete={() => window.scrollTo(0, 0)}
-      ><Component {...pageProps} /></motion.main>
+
+    <Component {...pageProps} />
+
     <footer>
       <Contatos />
 

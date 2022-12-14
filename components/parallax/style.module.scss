@@ -1,12 +1,11 @@
 .DivParallax {
-    min-height: 100vh; /* "será que tem mais para ver no site? Menu!"*/
+    min-height: 90vh; /* "será que tem mais para ver no site? Menu!"*/
 
-    background-image: url("/Imagens/Biels/BielaA1.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: left top;
 
-    box-shadow: inset 1px 0px 11px 0px #00000036;
+    box-shadow: inset 1px 0px 80px 14px #00000066;
 
     display: flex;
     align-items: center;
@@ -19,3 +18,4 @@
         font-weight: bolder;
     }
 }
+
