@@ -6,11 +6,13 @@ import Instagram from "../../public/images/redes/instagram.png"
 import Whatsapp from "../../public/images/redes/whatsapp.png"
 import Youtube from "../../public/images/redes/youtube.png"
 
+import { ContatosS } from "./style.module.scss"
+
 export default function Contatos() {
     return (
         <>
             <h2>Contatos</h2>
-            <div id="contatos">
+            <div className={ContatosS}>
                 <div>
                     <a
                         href="https://api.whatsapp.com/send?phone=555521981329073"

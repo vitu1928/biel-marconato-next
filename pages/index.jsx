@@ -36,7 +36,6 @@ export default function Home() {
         imgSrc={BielA1.src}
         title="ator - modelo - influencer"
       />
-      <Sobre />
       <hr />
       <Artista />
       <hr />

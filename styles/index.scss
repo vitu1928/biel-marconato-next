@@ -134,27 +134,6 @@ footer {
         text-align: center;
     }
 
-    div#contatos {
-        display: flex;
-        flex-wrap: wrap;
-        gap: clamp(30px, 4vw, 100px);
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-
-        a {
-            text-decoration: none;
-            color: black;
-
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-
     div#by {
         text-align: center;
         // margin-top: 80px;

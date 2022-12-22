@@ -8,6 +8,7 @@ import NovelaReis from "../../public/images/NovelaReis.jpg";
 import Vicente from "../../public/images/Vicente.jpg";
 
 import Transitions from '../../components/transicao';
+import Sobre from '../../components/sobre';
 
 export default function Artista() {
     useEffect(() => {
@@ -29,10 +30,11 @@ export default function Artista() {
 
     return (
         <Transitions>
+            <Sobre />
+
             <h2>Artista</h2>
             <section id="artista">
                 {/* Imagens ? */}
-                <h3>Trabalhos Recentes</h3>
                 <div>
                     <div data-inviewport="slide-p-in" id="tr">
                         <h3>Trabalhos Realizados</h3>
@@ -56,6 +58,7 @@ export default function Artista() {
                     </div>
                 </div>
                 <div>
+                <h3>Trabalhos Recentes</h3>
                     <div>
                         <Image
                             layout='intrinsic'
