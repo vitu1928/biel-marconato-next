@@ -1,10 +1,10 @@
 import Image from 'next/image'
 
 // Contatos
-import Whatsapp from "../../public/Imagens/whatsapp.png"
-import Instagram from "../../public/Imagens/instagram.png"
-import Gmail from "../../public/Imagens/gmail.png"
-import Youtube from "../../public/Imagens/youtube.png"
+import Gmail from "../../public/images/redes/gmail.png"
+import Instagram from "../../public/images/redes/instagram.png"
+import Whatsapp from "../../public/images/redes/whatsapp.png"
+import Youtube from "../../public/images/redes/youtube.png"
 
 export default function Contatos() {
     return (

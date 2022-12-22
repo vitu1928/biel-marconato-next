@@ -1,8 +1,8 @@
-import HarryP from "../../public/Imagens/Aparicoes/HarryP.jpg"
-import JardinsMaravilhas from "../../public/Imagens/Aparicoes/JardinsMarvilhas.jpg"
+import HarryP from "../../public/images/Aparicoes/HarryP.jpg";
+import JardinsMaravilhas from "../../public/images/Aparicoes/JardinsMarvilhas.jpg";
 
+import Imgbox from "../imgbox";
 import { SectionAparicoes } from "./style.module.scss";
-import Imgbox from "../imgbox"
 
 
 export default function Aparicoes() {

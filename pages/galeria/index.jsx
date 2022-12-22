@@ -1,13 +1,13 @@
 import Image from 'next/image'
 // Biels
-import Bielcruzado from "../../public/Imagens/Biels/Bielcruzado.jpg"
-import BielCulos from "../../public/Imagens/Biels/BielCulos.jpg"
-import BielLiz from "../../public/Imagens/Biels/BielLiz.jpeg"
-import Bielolhar from "../../public/Imagens/Biels/Bielolhar.jpg"
-import BielRio from "../../public/Imagens/Biels/BielRio.jpg"
-import BielRiste from "../../public/Imagens/Biels/BielRiste.jpg"; // Guerra civil
-import BielS2 from "../../public/Imagens/Biels/BielS2.jpg"
-import BielSentado from "../../public/Imagens/Biels/BielSentado.jpeg"
+import Bielcruzado from "../../public/images/Biels/Bielcruzado.jpg"
+import BielCulos from "../../public/images/Biels/BielCulos.jpg"
+import BielLiz from "../../public/images/Biels/BielLiz.jpeg"
+import Bielolhar from "../../public/images/Biels/Bielolhar.jpg"
+import BielRio from "../../public/images/Biels/BielRio.jpg"
+import BielRiste from "../../public/images/Biels/BielRiste.jpg"; // Guerra civil
+import BielS2 from "../../public/images/Biels/BielS2.jpg"
+import BielSentado from "../../public/images/Biels/BielSentado.jpeg"
 
 import Parallax from '../../components/parallax'
 import Transitions from '../../components/transicao'
@@ -16,7 +16,7 @@ export default function Galeria() {
     return (
         <Transitions>
             <Parallax imgSrc={Bielcruzado.src} title="Galeria"/>
-            <h2>Galeria</h2>
+            {/* <h2>Galeria</h2> */}
             <section id="galeria">
             {[
                 BielLiz,

@@ -7,7 +7,7 @@ export default function Parallax({ imgSrc, title }) {
             style={{backgroundImage: `url(${imgSrc})`}}
         >
             <h1>Biel Marconato</h1>
-            <p>{title}</p>
+            <h4>{title}</h4>
         </div>
     )
 }

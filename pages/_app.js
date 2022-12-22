@@ -1,10 +1,9 @@
-import { NextSeo } from 'next-seo'
-import { motion } from 'framer-motion';
+import { NextSeo } from 'next-seo';
 
-import Menu from '../components/menu';
 import Contatos from '../components/contatos';
+import Menu from '../components/menu';
 
-import '../styles/index.scss'
+import '../styles/index.scss';
 
 export default function MyApp({ Component, pageProps }) {
 
@@ -19,7 +18,7 @@ export default function MyApp({ Component, pageProps }) {
         description: 'Site de Biel Marconato ',
         images: [
           {
-            url: 'https://arquivos-elencodigital.s3.sa-east-1.amazonaws.com/imagens/elenco/60cfdd46cea2c_162423533460cfdd467652d.jpeg',
+            url: 'https://arquivos-elencodigital.s3.sa-east-1.amazonaws.com/images/elenco/60cfdd46cea2c_162423533460cfdd467652d.jpeg',
             width: 800,
             height: 600,
             alt: 'Biel Marconato',
@@ -30,10 +29,9 @@ export default function MyApp({ Component, pageProps }) {
       }}
     />
 
-    <link rel="icon" href="Imagens/Biels/favicon-32x32.png" />
+    <link rel="icon" href="images/Biels/favicon-32x32.png" />
 
     <Menu />
-
     <Component {...pageProps} />
 
     <footer>

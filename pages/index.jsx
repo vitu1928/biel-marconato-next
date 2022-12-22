@@ -1,20 +1,16 @@
-import { motion } from 'framer-motion'
 import { useEffect } from 'react'
 
 // Estudos
-import Teatro from "../public/Imagens/teatro.jpg"
-// import Cinema from "../public/Imagens/cinema.jpg"
-import Piano from "../public/Imagens/piano.jpg"
-import Sapateado from "../public/Imagens/sapateado.jpg"
+// import Cinema from "../public/images/cinema.jpg"
 
 // Components
-import Parallax from '../components/parallax'
 import Aparicoes from '../components/aparicoes'
-import Artista from './artista'
+import Parallax from '../components/parallax'
 import Sobre from '../components/sobre'
+import Artista from './artista'
 
-import BielA1 from "../public/Imagens/Biels/BielaA1.jpg";
 import Transitions from '../components/transicao'
+import BielA1 from "../public/images/Biels/BielaA1.jpg"
 
 export default function Home() {
   useEffect(() => {
@@ -36,15 +32,15 @@ export default function Home() {
 
   return (
     <Transitions>
-        <Parallax 
-          imgSrc={BielA1.src}
-          title="ator - modelo - influencer"
-          />
-        <Sobre />
-        <hr />
-        <Artista />
-        <hr />
-        <Aparicoes />
+      <Parallax
+        imgSrc={BielA1.src}
+        title="ator - modelo - influencer"
+      />
+      <Sobre />
+      <hr />
+      <Artista />
+      <hr />
+      <Aparicoes />
     </Transitions>
   )
 }

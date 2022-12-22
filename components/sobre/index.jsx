@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import BielOlhar from "../../public/Imagens/Biels/Bielolhar.jpg"
+import BielOlhar from "../../public/images/Biels/Bielolhar.jpg"
 
 export default function Sobre() {
     return (
@@ -9,7 +9,7 @@ export default function Sobre() {
             <section id="sobre" data-inviewport="slide-in">
                 <div>
                     <p>
-                        Biel Marconato, 11 anos, atua no meio audiovisual como
+                        Biel Marconato, 12 anos, atua no meio audiovisual como
                         ator, modelo e influencer. É um menino que está sempre
                         buscando se aprimorar e se atualizar.
                     </p>
