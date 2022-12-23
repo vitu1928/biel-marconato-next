@@ -5,7 +5,7 @@ import BielOlhar from "../../public/images/Biels/Bielolhar.jpg"
 export default function Sobre() {
     return (
         <>
-            <h2>Sobre</h2>
+            <h2>ator - modelo - influencer</h2>
             <section id="sobre" data-inviewport="slide-in">
                 <div>
                     <p>

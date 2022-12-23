@@ -41,22 +41,24 @@ export default function Galeria() {
             <article>
                 <Parallax imgSrc={Bielcruzado.src} title="Galeria" />
                 {/* <h2>Galeria</h2> */}
-                <h2>Modelo</h2>
-                <section id="galeria">
-                    {[
-                        BielLiz,
-                        BielS2,
-                        BielRiste,
-                        BielSentado,
-                        // BielOlhar,
-                        // BielaA1,
-                        // BielNé,
-                        BielCulos,
-                        Bielcruzado,
-                        Bielolhar,
-                        BielRio,
-                    ].map(mapGridArea)}
-                </section>
+                <div>
+                    <section id="galeria">
+                        {[
+                            BielLiz,
+                            BielS2,
+                            BielRiste,
+                            BielSentado,
+                            // BielOlhar,
+                            // BielaA1,
+                            // BielNé,
+                            BielCulos,
+                            Bielcruzado,
+                            Bielolhar,
+                            BielRio,
+                        ].map(mapGridArea)}
+                    </section>
+                    <h2>Modelo</h2>
+                </div>
                 <h2>Diretores</h2>
                 <section id="diretores">
                     {

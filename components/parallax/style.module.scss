@@ -1,11 +1,11 @@
 .DivParallax {
-    min-height: 80vh; /* "será que tem mais para ver no site? Menu!"*/
+    min-height: 90vh; /* "será que tem mais para ver no site? Menu!"*/
 
     background-size: cover;
     background-attachment: fixed;
     background-position: left top;
 
-    box-shadow: inset 1px 0px 80px 14px #00000066;
+    box-shadow: inset 0px 0px 54px -9px #00000066;
 
     display: flex;
     align-items: flex-start;
@@ -17,6 +17,8 @@
     h4 {
         font-weight: bolder;
         padding: 0px 5vw;
+        font-size: 8vw;
+        margin: 1vw;
     }
 }
 

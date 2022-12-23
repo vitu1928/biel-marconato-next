@@ -153,8 +153,7 @@ $cornerRad: 4px;
         transition: brightness .17s cubic-bezier(0.03, 1.05, 1, 1.29);
 
         &:hover {
-            color: #9a9a9a;
-            filter: brightness(0.92);
+            filter: brightness(0.8);
         }
     }
 }
@@ -165,3 +164,4 @@ $cornerRad: 4px;
     top: 0;
     z-index: 1;
 }
+

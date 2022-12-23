@@ -36,7 +36,7 @@ export default function Home() {
       <article>
         <Parallax
           imgSrc={BielA1.src}
-          title="ator - modelo - influencer"
+          title="Sobre"
         />
         <Artista />
         <hr />
