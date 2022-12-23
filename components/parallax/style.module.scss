@@ -1,5 +1,5 @@
 .DivParallax {
-    min-height: 90vh; /* "será que tem mais para ver no site? Menu!"*/
+    min-height: 100vh; /* "será que tem mais para ver no site? Menu!"*/
 
     background-size: cover;
     background-attachment: fixed;
@@ -9,7 +9,7 @@
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
 
     font-size: clamp(25px, 4vw, 70px); // 40px

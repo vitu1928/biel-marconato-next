@@ -1,7 +1,6 @@
 import { NextSeo } from 'next-seo';
 
 import Contatos from '../components/contatos';
-import Menu from '../components/menu';
 
 import '../styles/index.scss';
 
@@ -31,7 +30,8 @@ export default function MyApp({ Component, pageProps }) {
 
     <link rel="icon" href="images/Biels/favicon-32x32.png" />
 
-    <Menu />
+    
+
     <Component {...pageProps} />
 
     <footer>

@@ -29,8 +29,9 @@ h3 {
     align-self: center;
 }
 
-h1, h4 {
-    color: #FFE4C4;
+h1,
+h4 {
+    color: white;
 }
 
 h2 {
@@ -47,6 +48,11 @@ li,
 a,
 div {
     font-family: 'ABeeZee';
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
 }
 
 main {
@@ -108,12 +114,23 @@ main {
             }
         }
 
+        &#diretores {
+            display: grid;
+            padding: 50px;
+            grid-gap: 10px;
+
+            grid-template:
+                "FoguinhoDaRecordTV FernandoFerraz"
+                "GabrielaRosales MônicaTeixeira"
+                "Diretor4 Diretor4  ";
+        }
+
         &#galeria {
             display: grid;
 
             padding: 50px;
 
-            gap: 10px;
+            grid-gap: 10px;
             align-items: center;
             justify-content: center;
         }
@@ -184,7 +201,7 @@ div#tr[data-inviewport="slide-p-in"].is-inViewport {
 @media only screen and (min-width: 865px) {
     section#galeria {
         grid-template:
-            "BielLiz BielLiz  BielS2"
+            "BielLiz BielLiz BielS2"
             "BielRiste  BielCulos BielSentado"
             "Bielcruzado Bielolhar  BielRio";
     }
