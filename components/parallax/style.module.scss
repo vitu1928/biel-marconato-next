@@ -1,5 +1,5 @@
 .DivParallax {
-    min-height: 100vh; /* "será que tem mais para ver no site? Menu!"*/
+    min-height: 80vh; /* "será que tem mais para ver no site? Menu!"*/
 
     background-size: cover;
     background-attachment: fixed;
@@ -8,14 +8,15 @@
     box-shadow: inset 1px 0px 80px 14px #00000066;
 
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: space-between;
     flex-direction: column;
 
     font-size: clamp(25px, 4vw, 70px); // 40px
 
     h4 {
         font-weight: bolder;
+        padding: 0px 5vw;
     }
 }
 

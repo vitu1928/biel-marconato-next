@@ -6,17 +6,18 @@ import Instagram from "../../public/images/redes/instagram.png"
 import Whatsapp from "../../public/images/redes/whatsapp.png"
 import Youtube from "../../public/images/redes/youtube.png"
 
-import { ContatosS } from "./style.module.scss"
+import { ContatosS, InstagramS, EmailS, WhatsappS, YoutubeS } from "./style.module.scss"
 
 export default function Contatos() {
     return (
         <>
             <h2>Contatos</h2>
             <div className={ContatosS}>
-                <div>
                     <a
                         href="https://api.whatsapp.com/send?phone=555521981329073"
                         rel="external"
+                        target="_blank"
+                        className={WhatsappS}
                     >
                         <Image
                             layout='intrinsic'
@@ -28,9 +29,10 @@ export default function Contatos() {
                         />
                         Gislaine
                     </a>
-                </div>
-                <div>
-                    <a href="mailto:assessoriabielmarconato@gmail.com">
+                    <a 
+                        href="mailto:assessoriabielmarconato@gmail.com"
+                        className={EmailS}
+                    >
                         <Image
                             layout='intrinsic'
                             objectFit='contain'
@@ -41,11 +43,11 @@ export default function Contatos() {
                         />
                         assessoriabielmarconato@gmail.com
                     </a>
-                </div>
-                <div>
                     <a
                         href="https://www.instagram.com/bielmarconato/"
                         rel="external"
+                        target="_blank"
+                        className={InstagramS}
                     >
                         <Image
                             layout='intrinsic'
@@ -57,12 +59,11 @@ export default function Contatos() {
                         />
                         @bielmarconato
                     </a>
-                </div>
-                <div>
                     <a
-                        href="https://www.youtube.com/channel/UCEcyv8yzT6j_6kmavNOMQjA"
+                        href="https://www.youtube.com/channel/UCEcyv8yzT6j_6kmavNOMQjA?sub_confirmation=1"
                         rel="external"
-
+                        target="_blank"
+                        className={YoutubeS}
                     >
                         <Image
                             layout='intrinsic'
@@ -74,7 +75,6 @@ export default function Contatos() {
                         />
                         BIEL MARCONATO OFICIAL
                     </a>
-                </div>
             </div>
         </>
     )

@@ -25,6 +25,7 @@ export default function Home() {
 
     // Attach observer to every [data-inviewport] element:
     const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
+    
     ELs_inViewport.forEach(EL => {
       Obs.observe(EL, obsOptions);
     });
@@ -32,14 +33,15 @@ export default function Home() {
 
   return (
     <Transitions>
-      <Parallax
-        imgSrc={BielA1.src}
-        title="ator - modelo - influencer"
-      />
-      <hr />
-      <Artista />
-      <hr />
-      <Aparicoes />
+      <article>
+        <Parallax
+          imgSrc={BielA1.src}
+          title="ator - modelo - influencer"
+        />
+        <Artista />
+        <hr />
+        <Aparicoes />
+      </article>
     </Transitions>
   )
 }

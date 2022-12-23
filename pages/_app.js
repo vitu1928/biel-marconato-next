@@ -30,8 +30,6 @@ export default function MyApp({ Component, pageProps }) {
 
     <link rel="icon" href="images/Biels/favicon-32x32.png" />
 
-    
-
     <Component {...pageProps} />
 
     <footer>

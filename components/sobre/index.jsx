@@ -33,12 +33,14 @@ export default function Sobre() {
                         seu lado divertido através dos reels de comédia.
                     </p>
                 </div>
-                <Image
-                    layout='intrinsic'
-                    objectFit='contain'
-                    objectPosition={"center center"}
-                    src={BielOlhar}
-                />
+                <div>
+                    <Image
+                        layout='intrinsic'
+                        objectFit='contain'
+                        objectPosition={"center center"}
+                        src={BielOlhar}
+                    />
+                </div>
             </section>
         </>
     )

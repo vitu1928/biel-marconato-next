@@ -9,6 +9,7 @@ import Vicente from "../../public/images/Vicente.jpg";
 
 import Transitions from '../../components/transicao';
 import Sobre from '../../components/sobre';
+import Parallax from '../../components/parallax';
 
 export default function Artista() {
     useEffect(() => {

@@ -126,9 +126,14 @@ $cornerRad: 4px;
 
 .Navigation {
     width: 100%;
-    font-size: 2.5vw;
+    font-size: 2vw;
+    position: fixed;
+    top: 0px;
+    box-shadow: 0px 0px 0px 0px black;
+    color: white;
 
     background-color: rgba(255, 255, 255, 0);
+    transition: background-color .3s linear, box-shadow .3s linear;
 
     ul {
         display: flex;
@@ -143,11 +148,20 @@ $cornerRad: 4px;
     }
 
     a {
+        filter: brightness(1);
         color: white;
-        transition: color .17s ease-in;
+        transition: brightness .17s cubic-bezier(0.03, 1.05, 1, 1.29);
 
         &:hover {
             color: #9a9a9a;
+            filter: brightness(0.92);
         }
     }
+}
+
+.Header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }

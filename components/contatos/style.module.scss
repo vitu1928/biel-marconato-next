@@ -8,7 +8,6 @@
 
     a {
         text-decoration: none;
-        color: black;
 
         display: flex;
         flex-direction: column;
@@ -17,4 +16,26 @@
         justify-content: center;
         align-items: center;
     }
+}
+
+.InstagramS {
+    background: linear-gradient(to right, #7242aa, #c92ca1, #de446c, #e36d43, #facb69);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.EmailS {
+    background: linear-gradient(to right, #4385f5, #c8221f, #eb4333, #fbbb06, #35a954);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.YoutubeS {
+    color: #FE0000;
+}
+
+.WhatsappS {
+    background: linear-gradient(to right, #5bce66, #2f9933);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
