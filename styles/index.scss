@@ -82,7 +82,10 @@ main {
             line-height: 1.5em;
             padding: 20px;
 
-            // flex-wrap: wrap;
+            .escola-oficina {
+                text-decoration: underline wavy #3c5899 1px !important;
+                color: #3c5899;
+            }
 
             div {
                 margin: 10px;
@@ -97,7 +100,7 @@ main {
 
             line-height: 2em;
 
-            div {
+            > div { 
                 display: flex;
                 flex-direction: column;
                 text-align: center;
@@ -211,9 +214,8 @@ div#tr[data-inviewport="slide-p-in"].is-inViewport {
 @media only screen and (min-width: 865px) {
     section#galeria {
         grid-template:
-            "BielLiz BielLiz BielS2"
-            "BielRiste  BielCulos BielSentado"
-            "Bielcruzado Bielolhar  BielRio";
+            "BielRiste BielS2 BielSentado"
+            "Bielcruzado Bielolhar BielRio";
     }
 
     ul {
@@ -235,12 +237,8 @@ div#tr[data-inviewport="slide-p-in"].is-inViewport {
 
         &#galeria {
             grid-template:
-                "BielLiz BielLiz BielLiz"
                 "BielS2 BielRiste BielSentado"
-                "BielCulos BielCulos BielCulos"
-                "Bielcruzado Bielcruzado Bielcruzado"
-                "BielRio BielRio BielRio"
-                "Bielolhar Bielolhar Bielolhar";
+                "BielRio Bielcruzado Bielolhar  ";
         }
 
         &#sobre {

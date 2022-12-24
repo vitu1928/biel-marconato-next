@@ -6,27 +6,20 @@ import { BrowserView, MobileView } from 'react-device-detect';
 import { Details, NavMenu, Summary, Navigation, Header } from "./style.module.scss"
 
 export default function Menu() {
+    const hrefs = require("../../public/hrefs.json")
     useEffect(() => {
         const debounce = (fn) => {
             let frame;
             return (...params) => {
-                if (frame) {
-                    cancelAnimationFrame(frame);
-                }
-                frame = requestAnimationFrame(() => {
-                    fn(...params);
-                });
-
+                if (frame) cancelAnimationFrame(frame);
+                frame = requestAnimationFrame(() => fn(...params))
             }
-        };
-        const storeScroll = () => {
-            document.documentElement.dataset.scroll = window.scrollY;
         }
+        const storeScroll = () => document.documentElement.dataset.scroll = window.scrollY;
 
         document.addEventListener('scroll', debounce(storeScroll), { passive: true });
 
         storeScroll();
-
     }, [])
 
     return <>
@@ -34,18 +27,11 @@ export default function Menu() {
             <header className={Header}>
                 <nav className={Navigation} id="navigation">
                     <ul>
-                        <li>
-                            <Link href="/">Sobre</Link>
-                        </li>
-                        <li>
-                            <Link href="/galeria">Galeria</Link>
-                        </li>
-                        <li>
-                            <Link href="/aparicoes">Na mídia</Link>
-                        </li>
-                        <li>
-                            <Link href="#contatos">Contatos</Link>
-                        </li>
+                        {
+                            Object.entries(hrefs).map(([k, v], i) => <li>
+                                <Link href={k} key={i}>{v.toUpperCase()}</Link>
+                            </li>)
+                        }
                     </ul>
                 </nav>
             </header>
