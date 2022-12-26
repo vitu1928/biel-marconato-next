@@ -30,8 +30,16 @@ import Aspirando from "../public/images/CidadeFantasma/aspirando.jpg"
 import Cena from "../public/images/CidadeFantasma/cena.jpg"
 import Correndo from "../public/images/CidadeFantasma/correndo.jpg"
 import Mirando from "../public/images/CidadeFantasma/mirando.jpg"
-// import PianoTerror from "../public/images/CidadeFantasma/pianoterror.jpg"
 import Susto2 from "../public/images/CidadeFantasma/susto2.jpg"
+
+//Icones
+import TV from "../public/images/Icones/tv.png"
+import Desfile from "../public/images/Icones/desfile.png"
+import Novela from "../public/images/Icones/novela.png"
+import Editorial from "../public/images/Icones/editorial.png"
+import Serie from "../public/images/Icones/serie.png"
+import Campanha from "../public/images/Icones/campanha.png"
+import Comercial from "../public/images/Icones/comercial.png"
 
 import Transitions from '../components/transicao';
 import Parallax from '../components/parallax'
@@ -61,12 +69,12 @@ export default function Home() {
 
   function workImages(Img) {
     return <Image
-        layout='intrinsic'
-        objectFit='contain'
-        src={Img}
-        width={500}
-        height={500}
-      />
+      layout='intrinsic'
+      objectFit='contain'
+      src={Img}
+      width={500}
+      height={500}
+    />
   }
 
   return (
@@ -86,10 +94,10 @@ export default function Home() {
             <p>
               <Tooltip target=".escola-oficina">
                 <Image
-                 src={EscolaOficina}
-                 width={200}
-                 height={200}
-                 />
+                  src={EscolaOficina}
+                  width={200}
+                  height={200}
+                />
               </Tooltip>
               Como parte da sua formação de ator, estuda há 1 ano na <span className="escola-oficina">Escola Oficina</span> e faz vários cursos e workshops através da agência Cintra com os melhores profissionais do mercado tais como
               Márcio Trigo, Foguinho, Bruno Stuane, Thiago Coquelet, Márcia Ítalo, Cristina Bethencourt, Edgar Miranda entre outros. Em sua
@@ -123,43 +131,65 @@ export default function Home() {
         <h2>Artista</h2>
         <section id="artista">
           {/* Imagens ? */}
-          <div>
             <h3>Trabalhos Realizados</h3>
-            <div data-inviewport="slide-p-in" id="tr">
-              <p>
-                <strong>Desfiles</strong>: Feira Opera 2020/21, Catwalk internacional,
-                Aquarela Nacional, Passarela produção Brasil como
-                Mister São Paulo.
-              </p>
-              <p>
-                <strong>Catálogos e campanhas</strong>: Oliver Kids, Malwee, Hering, Ellus, Demanos, Puket, Pistol Star e Hershey&apos;s.
-              </p>
-              <p>
-                <strong>Novelas</strong>: As aventuras de Poliana SBT e Novela Reis da Record tv através da agência Cintra.<br />
-                <strong>Séries</strong>: Escolinha Ecológica NGT TV e Bugados Globo play.<br />
-                <strong>TV</strong>: personagem LIPI na tv SKY, programa de humor infantil exibido todos os sábados<br />
-                <strong>Comerciais</strong>: Prefeitura de Sorocaba, Itau, Bradesco.
-              </p>
-              <p>
-                <strong>Editoriais</strong>: Villy Ribeiro, Luciana Kajaer, Márcio Falcão.
-              </p>
+          <div>
+            <div id="TransparentBlack">
+              {
+                [
+                  {
+                    h4: "Desfiles",
+                    p: "Feira Opera 2020/21, Catwalk internacional, Aquarela Nacional, Passarela produção Brasil como Mister São Paulo.",
+                    img: Desfile
+                  },
+                  {
+                    h4: "Catálogos e campanhas",
+                    p: "Oliver Kids, Malwee, Hering, Ellus, Demanos, Puket, Pistol Star e Hershey&apos;s.",
+                    img: Campanha
+                  },
+                  {
+                    h4: "Novelas",
+                    p: "As aventuras de Poliana SBT e Novela Reis da Record tv através da agência Cintra",
+                    img: Novela
+                  },
+                  {
+                    h4: "Séries",
+                    p: "Escolinha Ecológica NGT TV e Bugados Globo play",
+                    img: Serie
+                  },
+                  {
+                    h4: "TV",
+                    p: "personagem LIPI na tv SKY, programa de humor infantil exibido todos os sábados",
+                    img: TV
+                  },
+                  {
+                    h4: "Comerciais",
+                    p: "Prefeitura de Sorocaba, Itau, Bradesco",
+                    img: Comercial
+                  },
+                  {
+                    h4: "Editoriais",
+                    p: "Villy Ribeiro, Luciana Kajaer, Márcio Falcão",
+                    img: Editorial
+                  },
+                ].map(({ h4, p, img }) => <div data-inviewport="slide-p-in">
+                  <div className="ImageContainer">
+                    <img
+                      src={img.src}
+                      className="IconImage"
+                    />
+                  </div>
+
+                  <h4>{h4}</h4>
+                  <p>{p}</p>
+                </div>)
+              }
+            </div>
+            <div id="tr">
             </div>
           </div>
+
           <div>
             <h3>Trabalhos Recentes</h3>
-            <div>
-              <Carousel
-                data-inviewport="scale-in"
-                value={[Susto, Arrepiado, Aspirando, Cena, Correndo, Mirando, Susto2]}
-                numVisible={1}
-                numScroll={1}
-                className="custom-carousel"
-                autoplayInterval={2000}
-                itemTemplate={workImages}
-                footer={<p><strong>Filme</strong>: Vicente na cidade Fantasma
-                  Personagem: Vicente (protagonista)</p>}
-              />
-            </div>
             <div>
               <Image
                 layout='intrinsic'
@@ -177,7 +207,20 @@ export default function Home() {
             <div>
               <Carousel
                 data-inviewport="scale-in"
-                value={[CapaNovela, NovelaReis, VigiaDeCana]}
+                value={[Susto, Arrepiado, Aspirando, Cena, Correndo, Mirando, Susto2]}
+                numVisible={1}
+                numScroll={1}
+                className="custom-carousel"
+                autoplayInterval={2000}
+                itemTemplate={workImages}
+                footer={<p><strong>Filme</strong>: Vicente na cidade Fantasma
+                  Personagem: Vicente (protagonista)</p>}
+              />
+            </div>
+            <div>
+              <Carousel
+                data-inviewport="scale-in"
+                value={[CapaNovela, NovelaReis, VigiaDeCana, Novel, RecordTV]}
                 numVisible={1}
                 numScroll={1}
                 className="custom-carousel"
@@ -187,7 +230,7 @@ export default function Home() {
               />
             </div>
             <div>
-            <Carousel
+              <Carousel
                 data-inviewport="scale-in"
                 value={[Leleko, Palhaco, Lipi, SkyGirl, Sky]}
                 numVisible={1}

@@ -17,7 +17,6 @@ import Parallax from '../../components/parallax'
 import Transitions from '../../components/transicao'
 
 import { Galleria } from "./style.module.scss"
-
 export default function Galeria() {
     function mapGridArea(v, index) {
         return <div
@@ -63,7 +62,7 @@ export default function Galeria() {
                 </div>
                 <div className={Galleria}>
                     <h2
-                        style={{ marginRight: 0 }}
+                        style={{ marginRight: 0, transform: "rotate(180deg)" }}
                     >Diretores</h2>
                     <section id="diretores">
                         {

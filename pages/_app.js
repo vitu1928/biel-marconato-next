@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo';
 
 import Contatos from '../components/contatos';
 
-import '../styles/index.scss';
+import './index.scss';
 
 export default function MyApp({ Component, pageProps }) {
 
@@ -36,9 +36,7 @@ export default function MyApp({ Component, pageProps }) {
       <Contatos />
 
       <div id="by">
-        <p>
-          <address>2022 © por Victor</address>
-        </p>
+        <address>2022 © por Victor</address>
       </div>
     </footer>
   </>
