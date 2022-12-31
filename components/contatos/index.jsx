@@ -15,7 +15,7 @@ export default function Contatos() {
             <div className={ContatosS}>
                     <a
                         href="https://api.whatsapp.com/send?phone=555521981329073"
-                        rel="external"
+                        rel="noreferrer"
                         target="_blank"
                         className={WhatsappS}
                     >
@@ -45,7 +45,7 @@ export default function Contatos() {
                     </a>
                     <a
                         href="https://www.instagram.com/bielmarconato/"
-                        rel="external"
+                        rel="noreferrer"
                         target="_blank"
                         className={InstagramS}
                     >
@@ -61,7 +61,7 @@ export default function Contatos() {
                     </a>
                     <a
                         href="https://www.youtube.com/channel/UCEcyv8yzT6j_6kmavNOMQjA?sub_confirmation=1"
-                        rel="external"
+                        rel="noreferrer"
                         target="_blank"
                         className={YoutubeS}
                     >
