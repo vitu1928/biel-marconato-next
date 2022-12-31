@@ -28,8 +28,8 @@ export default function Menu() {
                 <nav className={Navigation} id="navigation">
                     <ul>
                         {
-                            Object.entries(hrefs).map(([k, v], i) => <li>
-                                <Link href={k} key={i}>{v.toUpperCase()}</Link>
+                            Object.entries(hrefs).map(([k, v], i) => <li key={i}>
+                                <Link href={k}>{v.toUpperCase()}</Link>
                             </li>)
                         }
                     </ul>
