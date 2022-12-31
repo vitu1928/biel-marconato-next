@@ -152,10 +152,10 @@ $cornerRad: 4px;
     a {
         color: white;
         filter: brightness(1);
-        transition: filter .17s cubic-bezier(0.03, 1.05, 1, 1.29);
+        transition: color .17s cubic-bezier(0.03, 1.05, 1, 1.29);
         
         &:hover {
-            filter: brightness(0.8);
+            color: rgb(185, 185, 185);
         }
     }
 }

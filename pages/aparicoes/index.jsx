@@ -13,14 +13,10 @@ export default function Aparicoes() {
     return (
         <>
             <Transitions>
-                <Parallax 
-                    img={BielRio}
-                />
-                <h2>
-                    Na mídia
-                </h2>
-                <article>
-                    <section className={SectionAparicoes}>
+                <Parallax img={BielRio} />
+                <section className={SectionAparicoes}>
+                    <h2>Na mídia</h2>
+                    <article>
                         <ul type="none">
                             <li>
                                 <div>
@@ -29,7 +25,7 @@ export default function Aparicoes() {
                                         title="Gazeta da noticia"
                                         popacitylow="Gabriel Marconato Fala Sobre Estreia No Teatro: “Foi Uma Experiência Muito Legal”                                "
                                         p="Aos 10 anos, o ator Gabriel Marconato só tem motivos para celebrar. Ele estreou recentemente seu primeiro espetáculo nos teatros.
-                                        “Foi uma experiência muito legal, fiquei aflito quando o personagem ‘Sem Nome’ roubou o macaco (risos), isso me deu um desespero, eu gritava bem alto pra ver se o Stephen ouvia”, conta."
+                                            “Foi uma experiência muito legal, fiquei aflito quando o personagem ‘Sem Nome’ roubou o macaco (risos), isso me deu um desespero, eu gritava bem alto pra ver se o Stephen ouvia”, conta."
                                         href="https://gazetadanoticia.com.br/2022/06/21/gabriel-marconato-fala-sobre-estreia-no-teatro-foi-uma-experiencia-muito-legal/"
                                     />
                                 </div>
@@ -69,7 +65,6 @@ export default function Aparicoes() {
                                         title="Times Brasilia"
                                         popacitylow="Biel Marconato se diverte em passeio de Maria Fumaça pela região de Campinas"
                                         p="O ator mirim Biel Marconato aproveitou o dia de folga para um passeio de Maria Fumaça, na região de Campinas, interior de São Paulo."
-                
                                         href="https://timesbrasilia.com.br/cultura/biel-marconato-se-diverte-em-passeio-de-maria-fumaca-pela-regiao-de-campinas/"
                                     />
                                 </div>
@@ -146,8 +141,7 @@ export default function Aparicoes() {
                                         title="Biel Marconato Model Brazil"
                                         popacitylow="Gabriel Marconato: O modelo que aos 10 anos considerado uma grande promessa no mercado fashion e publicitário"
                                         p="Quem é hoje o BieL Marconato ?
-                                •Gabriel Marconato Ramos chamado carinhosamente pelos amigos BieL está com 10 anos ( 29/01/2011) ..."
-                
+                                    •Gabriel Marconato Ramos chamado carinhosamente pelos amigos BieL está com 10 anos ( 29/01/2011) ..."
                                         href="https://modelbrazil.com.br/gabriel-marconato-o-modelo-que-aos-10-anos-considerado-uma-grande-promessa-no-mercado-fashion-e-publicitario/"
                                     />
                                 </div>
@@ -364,8 +358,8 @@ export default function Aparicoes() {
                                 </div>
                             </li>
                         </ul>
-                    </section>
-                </article>
+                    </article>
+                </section>
             </Transitions>
         </>
     )

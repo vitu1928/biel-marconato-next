@@ -35,9 +35,7 @@ export default function MyApp({ Component, pageProps }) {
     <footer>
       <Contatos />
 
-      <div id="by">
-        <address>2022 © por Victor</address>
-      </div>
+      <address>2022 © por Victor</address>
     </footer>
   </>
 }

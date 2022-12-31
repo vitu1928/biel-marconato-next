@@ -79,60 +79,59 @@ export default function Home() {
 
   return (
     <Transitions>
-      <article>
-        <Parallax
-          img={BielA1}
-        />
-        <h2>ator - modelo - influencer</h2>
-        <section id="sobre" data-inviewport="slide-in">
-          <div>
-            <p>
-              Biel Marconato, 12 anos, atua no meio audiovisual como
-              ator, modelo e influencer. É um menino que está sempre
-              buscando se aprimorar e se atualizar.
-            </p>
-            <p>
-              <Tooltip target=".escola-oficina">
-                <Image
-                  src={EscolaOficina}
-                  width={200}
-                  height={200}
-                />
-              </Tooltip>
-              Como parte da sua formação de ator, estuda há 1 ano na <span className="escola-oficina">Escola Oficina</span> e faz vários cursos e workshops através da agência Cintra com os melhores profissionais do mercado tais como
-              Márcio Trigo, Foguinho, Bruno Stuane, Thiago Coquelet, Márcia Ítalo, Cristina Bethencourt, Edgar Miranda entre outros. Em sua
-              carreira já participou de campanhas publicitárias, peças de
-              teatro e seriados de televisão.
-            </p>
-            <p>
-              Atualmente estuda piano; cinema; TV; sapateado e tem como
-              passatempo jogar videogame.
-            </p>
-            <p>
-              Em seu Instagram, Biel Marconato compartilha dicas de
-              moda, os bastidores das campanhas, gravações e também
-              dicas de estudos e línguas.
-            </p>
-            <p>
-              Estando sempre ligado na trend do momento, Biel mostra
-              seu lado divertido através dos reels de comédia.
-            </p>
-          </div>
-          <div>
-            <Image
-              layout='intrinsic'
-              objectFit='contain'
-              objectPosition={"center center"}
-              src={BielOlhar}
-            />
-          </div>
-        </section>
+      <Parallax
+        img={BielA1}
+      />
+      <section id="sobre" data-inviewport="slide-in">
+        <article>
+          <h2>ator - modelo - influencer</h2>
+          <p>
+            Biel Marconato, 12 anos, atua no meio audiovisual como
+            ator, modelo e influencer. É um menino que está sempre
+            buscando se aprimorar e se atualizar.
+          </p>
+          <p>
+            <Tooltip target=".escola-oficina">
+              <Image
+                src={EscolaOficina}
+                width={200}
+                height={200}
+              />
+            </Tooltip>
+            Como parte da sua formação de ator, estuda há 1 ano na <span className="escola-oficina">Escola Oficina</span> e faz vários cursos e workshops através da agência Cintra com os melhores profissionais do mercado tais como
+            Márcio Trigo, Foguinho, Bruno Stuane, Thiago Coquelet, Márcia Ítalo, Cristina Bethencourt, Edgar Miranda entre outros. Em sua
+            carreira já participou de campanhas publicitárias, peças de
+            teatro e seriados de televisão.
+          </p>
+          <p>
+            Atualmente estuda piano; cinema; TV; sapateado e tem como
+            passatempo jogar videogame.
+          </p>
+          <p>
+            Em seu Instagram, Biel Marconato compartilha dicas de
+            moda, os bastidores das campanhas, gravações e também
+            dicas de estudos e línguas.
+          </p>
+          <p>
+            Estando sempre ligado na trend do momento, Biel mostra
+            seu lado divertido através dos reels de comédia.
+          </p>
+        </article>
+        <div>
+          <Image
+            layout='intrinsic'
+            objectFit='contain'
+            objectPosition={"center center"}
+            src={BielOlhar}
+          />
+        </div>
+      </section>
 
+      <section id="artista">
         <h2>Artista</h2>
-        <section id="artista">
-          {/* Imagens ? */}
-            <h3>Trabalhos Realizados</h3>
-          <div>
+        <article>
+          <h3>Trabalhos Realizados</h3>
+          <div id="tr">
             <div id="TransparentBlack">
               {
                 [
@@ -171,79 +170,76 @@ export default function Home() {
                     p: "Villy Ribeiro, Luciana Kajaer, Márcio Falcão",
                     img: Editorial
                   },
-                ].map(({ h4, p, img }) => <div data-inviewport="slide-p-in">
+                ].map(({ h4, p, img }, key) => <div data-inviewport="slide-p-in" key={key}>
                   <div className="ImageContainer">
                     <img
                       src={img.src}
                       className="IconImage"
                     />
                   </div>
-
                   <h4>{h4}</h4>
                   <p>{p}</p>
                 </div>)
               }
             </div>
-            <div id="tr">
-            </div>
           </div>
+        </article>
 
+        <article>
+          <h3>Trabalhos Recentes</h3>
           <div>
-            <h3>Trabalhos Recentes</h3>
-            <div>
-              <Image
-                layout='intrinsic'
-                objectFit='cover'
-                objectPosition={"top center"}
-                src={BielRiste}
-                width={500}
-                height={500}
-                data-inviewport="scale-in"
-              />
-              <p><strong>Filme</strong>: Guerra Cívil
-                Personagem: Michelângelo (protagonista)
-                Direção Flavio Carnielli</p>
-            </div>
-            <div>
-              <Carousel
-                data-inviewport="scale-in"
-                value={[Susto, Arrepiado, Aspirando, Cena, Correndo, Mirando, Susto2]}
-                numVisible={1}
-                numScroll={1}
-                className="custom-carousel"
-                autoplayInterval={2000}
-                itemTemplate={workImages}
-                footer={<p><strong>Filme</strong>: Vicente na cidade Fantasma
-                  Personagem: Vicente (protagonista)</p>}
-              />
-            </div>
-            <div>
-              <Carousel
-                data-inviewport="scale-in"
-                value={[CapaNovela, NovelaReis, VigiaDeCana, Novel, RecordTV]}
-                numVisible={1}
-                numScroll={1}
-                className="custom-carousel"
-                autoplayInterval={3000}
-                itemTemplate={workImages}
-                footer={<p><strong>Novela:</strong> Reis</p>}
-              />
-            </div>
-            <div>
-              <Carousel
-                data-inviewport="scale-in"
-                value={[Leleko, Palhaco, Lipi, SkyGirl, Sky]}
-                numVisible={1}
-                numScroll={1}
-                className="custom-carousel"
-                autoplayInterval={3000}
-                itemTemplate={workImages}
-                footer={<p><strong>Programa de comédia:</strong> SKY TV como Lipi</p>}
-              />
-            </div>
+            <Image
+              layout='intrinsic'
+              objectFit='cover'
+              objectPosition={"top center"}
+              src={BielRiste}
+              width={500}
+              height={500}
+              data-inviewport="scale-in"
+            />
+            <p><strong>Filme</strong>: Guerra Cívil
+              Personagem: Michelângelo (protagonista)
+              Direção Flavio Carnielli</p>
           </div>
-        </section>
-      </article>
+          <div>
+            <Carousel
+              data-inviewport="scale-in"
+              value={[Susto, Arrepiado, Aspirando, Cena, Correndo, Mirando, Susto2]}
+              numVisible={1}
+              numScroll={1}
+              className="custom-carousel"
+              autoplayInterval={2000}
+              itemTemplate={workImages}
+              footer={<p><strong>Filme</strong>: Vicente na cidade Fantasma
+                Personagem: Vicente (protagonista)</p>}
+            />
+          </div>
+          <div>
+            <Carousel
+              data-inviewport="scale-in"
+              value={[CapaNovela, NovelaReis, VigiaDeCana, Novel, RecordTV]}
+              numVisible={1}
+              numScroll={1}
+              className="custom-carousel"
+              autoplayInterval={3000}
+              itemTemplate={workImages}
+              footer={<p><strong>Novela:</strong> Reis</p>}
+            />
+          </div>
+          <div>
+            <Carousel
+              data-inviewport="scale-in"
+              value={[Leleko, Palhaco, Lipi, SkyGirl, Sky]}
+              numVisible={1}
+              numScroll={1}
+              className="custom-carousel"
+              autoplayInterval={3000}
+              itemTemplate={workImages}
+              footer={<p><strong>Programa de comédia:</strong> SKY TV como Lipi</p>}
+            />
+          </div>
+        </article>
+      </section>
     </Transitions>
   )
 }

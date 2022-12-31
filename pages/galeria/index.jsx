@@ -39,7 +39,6 @@ export default function Galeria() {
     return (
         <Transitions>
             <Parallax img={Bielcruzado} title="Galeria" />
-            <article>
                 <div className={Galleria}>
                     <section id="galeria">
                         {[
@@ -76,7 +75,6 @@ export default function Galeria() {
                         }
                     </section>
                 </div>
-            </article>
         </Transitions>
     )
 }
