@@ -120,7 +120,7 @@ main {
 
                 @supports (-webkit-touch-callout: none) {
                     background-attachment: scroll;
-                    background-position: right;
+                    background-position: top center;
                 }
             
                 @supports not (-webkit-touch-callout: none) {
