@@ -8,9 +8,9 @@ export default function Parallax({ img }) {
 
     const hrefs = require("../../public/hrefs.json")
     return (
-        <div 
+        <div
             className={DivParallax}
-            style={{backgroundImage: `url(${img?.src})`}}
+            style={{ backgroundImage: `url(${img?.src})` }}
         >
             <Menu />
             <h1>Biel Marconato</h1>
@@ -18,3 +18,12 @@ export default function Parallax({ img }) {
         </div>
     )
 }
+
+{/* <div class="parallax-image1 sticky page-title">
+        </div>
+        <div class="section-header page-title">
+            <div class="header-text">
+                <h1>Full Parallax for iOS</h1>
+                <h3>Displays properly on iPhone and iPad</h3>
+            </div>
+        </div> */}
