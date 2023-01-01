@@ -9,7 +9,7 @@ import BielSentado from "../../public/images/Biels/BielSentado.jpeg"
 
 import Diretor4 from "../../public/images/Diretores/Diretor4.jpg"
 import FernandoFerraz from "../../public/images/Diretores/FernandoFerraz.jpg"
-import FoguinhoDaRecordTV from "../../public/images/Diretores/FoguinhoDaRecordTV.jpg"
+import FoguinhoDaRecordTV from "../../public/images/Diretores/FoguinhodaRecordTV.jpg"
 import GabrielaRosales from "../../public/images/Diretores/GabrielaRosales.jpg"
 import MonicaTeixeira from "../../public/images/Diretores/MônicaTeixeira.jpg"
 
