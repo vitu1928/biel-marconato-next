@@ -1,6 +1,9 @@
 .DivParallax {
-    min-height: 90vh; /* "será que tem mais para ver no site? Menu!"*/
+    min-height: 90vh;
+    /* "será que tem mais para ver no site? Menu!"*/
 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
     background-position: left top;
@@ -21,4 +24,3 @@
         margin: 1vw;
     }
 }
-
