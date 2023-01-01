@@ -116,13 +116,15 @@ main {
             div#tr {
                 background-image: url(/images/Biels/BielAperto.jpg);
                 background-repeat: no-repeat;
-                background-color: rgba(0, 0, 0, 0.322)0066;
+                background-color: rgba(0, 0, 0, 0.322);
+
                 @supports (-webkit-touch-callout: none) {
-                    background-axttachment: scroll;
+                    background-attachment: scroll;
+                    background-position: right;
                 }
             
                 @supports not (-webkit-touch-callout: none) {
-                    background-axttachment: fixed;
+                    background-attachment: fixed;
                 }
                 background-size: cover;
                 box-shadow: inset 0px 0px 54px -9px #00000066;
