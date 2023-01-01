@@ -19,11 +19,9 @@ export default function Aparicoes() {
                         <ul type="none">
                             {
                                 lugares.map((data, k) => <li key={k}>
-                                    <div>
-                                        <Imgbox
-                                            {...data}
-                                        />
-                                    </div>
+                                    <Imgbox
+                                        {...data}
+                                    />
                                 </li>)
                             }
                         </ul>

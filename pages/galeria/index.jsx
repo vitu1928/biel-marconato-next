@@ -73,7 +73,6 @@ export default function Galeria() {
                                 }
                             ].map(({ img, name }, k) => {
                                 return <div
-                                    style={{ gridArea: img.src.split("/").pop().split(".").shift() }}
                                     key={k}
                                     className={GaleriaImg}
                                 >

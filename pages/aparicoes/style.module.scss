@@ -6,10 +6,23 @@
 
   ul {
     display: grid;
+    padding: 0;
 
     li {
       display: flex;
       justify-content: center;
+    }
+
+    @media only screen and (max-width: 398px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      overflow-x: auto;
+      
+      flex-wrap: nowrap;
+      scroll-behavior: smooth;
+      -ms-scroll-snap-type: x proximity;
+      scroll-snap-type: x proximity;
     }
 
     @media only screen and (min-width: 1125px) {

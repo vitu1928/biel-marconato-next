@@ -10,7 +10,7 @@
     >div {
         display: grid;
 
-        padding: 50px;
+        padding: 5vw;
 
         grid-gap: 10px;
         align-items: center;
@@ -54,12 +54,10 @@
 
     >div {
         display: grid;
-        padding: 50px;
+        padding: 5vw;
         grid-gap: 10px;
 
-        grid-template:
-            "FoguinhodaRecordTV FernandoFerraz"
-            "GabrielaRosales MônicaTeixeira";
+        grid-template-columns: 1fr 1fr;
     }
 
     @media only screen and (max-width: 865px) {
@@ -67,8 +65,7 @@
 
         h2 {
             writing-mode: horizontal-tb;
-        transform: rotate(0deg);
-
+            transform: rotate(0deg);
         }
     }
 }
