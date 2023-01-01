@@ -20,7 +20,7 @@
     h4 {
         font-weight: bolder;
         padding: 0px 5vw;
-        font-size: 8vw;
+        font-size: calc(max(9vw, 9vh));
         margin: 1vw;
     }
 }
