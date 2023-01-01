@@ -5,13 +5,15 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
+    
     @supports (-webkit-touch-callout: none) {
         background-axttachment: scroll;
     }
 
     @supports not (-webkit-touch-callout: none) {
-    background-axttachment: fixed;
+        background-axttachment: fixed;
     }
+
     background-position: left top;
 
     box-shadow: inset 0px 0px 54px -9px #00000066;
