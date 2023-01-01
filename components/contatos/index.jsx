@@ -1,10 +1,10 @@
 import Image from 'next/image'
 
 // Contatos
-import Gmail from "../../public/images/redes/gmail.png"
-import Instagram from "../../public/images/redes/instagram.png"
-import Whatsapp from "../../public/images/redes/whatsapp.png"
-import Youtube from "../../public/images/redes/youtube.png"
+import Gmail from "../../public/images/Redes/gmail.png"
+import Instagram from "../../public/images/Redes/instagram.png"
+import Whatsapp from "../../public/images/Redes/whatsapp.png"
+import Youtube from "../../public/images/Redes/youtube.png"
 
 import { ContatosS, InstagramS, EmailS, WhatsappS, YoutubeS } from "./style.module.scss"
 
