@@ -13,7 +13,7 @@ export default function MyApp({ Component, pageProps }) {
       canonical="https://www.bielmarconato.com.br/"
       openGraph={{
         url: 'https://bielmarconato.com.br/',
-        title: 'Biel Marconato WebSite',
+        "title": 'Biel Marconato WebSite',
         description: 'Site de Biel Marconato ',
         images: [
           {

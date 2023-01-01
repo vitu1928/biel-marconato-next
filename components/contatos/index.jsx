@@ -12,7 +12,7 @@ export default function Contatos() {
     return (
         <>
             <h2>Contatos</h2>
-            <div className={ContatosS}>
+            <div className={ContatosS} id="contatos">
                     <a
                         href="https://api.whatsapp.com/send?phone=555521981329073"
                         rel="noreferrer"

@@ -16,7 +16,8 @@ import MonicaTeixeira from "../../public/images/Diretores/MônicaTeixeira.jpg"
 import Parallax from '../../components/parallax'
 import Transitions from '../../components/transicao'
 
-import { Galleria } from "./style.module.scss"
+import { GaleriaModelo, GaleriaDiretores } from "./style.module.scss"
+
 export default function Galeria() {
     function mapGridArea(v, index) {
         return <div
@@ -39,8 +40,9 @@ export default function Galeria() {
     return (
         <Transitions>
             <Parallax img={Bielcruzado} title="Galeria" />
-                <div className={Galleria}>
-                    <section id="galeria">
+            <section>
+                <article className={GaleriaModelo}>
+                    <div id="galeria">
                         {[
                             // BielLiz,
                             BielS2,
@@ -54,16 +56,16 @@ export default function Galeria() {
                             Bielolhar,
                             BielRio,
                         ].map(mapGridArea)}
-                    </section>
+                    </div>
                     <h2
                         style={{ marginLeft: 0 }}
                     >Modelo</h2>
-                </div>
-                <div className={Galleria}>
-                    <h2
-                        style={{ marginRight: 0, transform: "rotate(180deg)" }}
-                    >Diretores</h2>
-                    <section id="diretores">
+                </article>
+            </section>
+            <section id="diretores">
+                <article className={GaleriaDiretores}>
+                    <h2>Diretores</h2>
+                    <div id="diretores">
                         {
                             [
                                 MonicaTeixeira,
@@ -73,8 +75,9 @@ export default function Galeria() {
                                 Diretor4
                             ].map(mapGridArea)
                         }
-                    </section>
-                </div>
+                    </div>
+                </article>
+            </section>
         </Transitions>
     )
 }

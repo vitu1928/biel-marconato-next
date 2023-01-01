@@ -1,7 +1,27 @@
 .SectionAparicoes {
-  padding: 20px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  scroll-snap-type: x mandatory;
+  flex-direction: column;
+  padding: 20px;
+
+  ul {
+    display: grid;
+
+    li {
+      display: flex;
+      justify-content: center;
+    }
+
+    @media only screen and (min-width: 1125px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media only screen and (max-width: 1125px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media only screen and (max-width: 723px) {
+      grid-template-columns: 1fr;
+    }
+  }
 }

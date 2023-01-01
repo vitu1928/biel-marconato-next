@@ -1,8 +1,74 @@
-.Galleria {
+.GaleriaModelo {
     display: flex;
 
     h2 {
         writing-mode: vertical-lr;
         font-size: 10vw;
+    }
+
+    >div {
+        display: grid;
+
+        padding: 50px;
+
+        grid-gap: 10px;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (min-width: 865px) {
+            grid-template:
+                "BielRiste BielS2 BielSentado"
+                "Bielcruzado Bielolhar BielRio";
+        }
+    }
+
+
+
+    @media only screen and (max-width: 865px) {
+        flex-direction: column-reverse;
+
+        h2 {
+            writing-mode: horizontal-tb;
+        }
+
+        >div {
+            grid-template: "BielS2 BielSentado"
+                "BielRiste BielRiste"
+                "BielRio Bielcruzado"
+                "Bielolhar Bielolhar";
+        }
+    }
+}
+
+
+.GaleriaDiretores {
+    display: flex;
+
+    h2 {
+        writing-mode: vertical-lr;
+        font-size: 10vw;
+        margin-right: 0;
+        transform: rotate(180deg);
+    }
+
+    >div {
+        display: grid;
+        padding: 50px;
+        grid-gap: 10px;
+
+        grid-template:
+            "FoguinhodaRecordTV FernandoFerraz"
+            "GabrielaRosales MônicaTeixeira"
+            "Diretor4 Diretor4";
+    }
+
+    @media only screen and (max-width: 865px) {
+        flex-direction: column;
+
+        h2 {
+            writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+
+        }
     }
 }

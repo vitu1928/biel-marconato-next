@@ -163,26 +163,7 @@ main {
 
         }
 
-        &#diretores {
-            display: grid;
-            padding: 50px;
-            grid-gap: 10px;
-
-            grid-template:
-                "FoguinhoDaRecordTV FernandoFerraz"
-                "GabrielaRosales MônicaTeixeira"
-                "Diretor4 Diretor4  ";
-        }
-
-        &#galeria {
-            display: grid;
-
-            padding: 50px;
-
-            grid-gap: 10px;
-            align-items: center;
-            justify-content: center;
-        }
+        
 
         &#aparicoes {
             align-items: center;
@@ -241,36 +222,10 @@ div#tr[data-inviewport="slide-p-in"].is-inViewport {
     filter: blur(0px);
 }
 
-// transform: rotate(180deg);
-
-@media only screen and (min-width: 865px) {
-    section#galeria {
-        grid-template:
-            "BielRiste BielS2 BielSentado"
-            "Bielcruzado Bielolhar BielRio";
-    }
-
-    ul {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        overflow-x: unset;
-    }
-}
-
 @media only screen and (max-width: 865px) {
     section {
         &#aparicoes {
             grid-template: "gallery1 gallery2" "img1 img2";
-        }
-
-        &#galeria {
-            grid-template:
-                "BielS2 BielRiste BielSentado"
-                "BielRio Bielcruzado Bielolhar  ";
         }
 
         &#sobre {
@@ -279,17 +234,6 @@ div#tr[data-inviewport="slide-p-in"].is-inViewport {
 
         &#artista div {
             grid-row: auto;
-        }
-
-        ul {
-            display: flex;
-            flex-direction: row;
-            align-content: center;
-            justify-content: center;
-
-            overflow-x: auto;
-            flex-wrap: nowrap;
-            scroll-behavior: smooth;
         }
     }
 }

@@ -1,20 +1,20 @@
 import Image from 'next/image';
-import { useEffect } from 'react'
 import { Carousel } from 'primereact/carousel';
 import { Tooltip } from 'primereact/tooltip';
+import { useEffect } from 'react';
 
-import EscolaOficina from "../public/images/EscolaOficina.jpeg"
+import EscolaOficina from "../public/images/EscolaOficina.jpeg";
 
+import BielA1 from "../public/images/Biels/BielaA1.jpg";
+import BielOlhar from "../public/images/Biels/Bielolhar.jpg";
 import BielRiste from "../public/images/Biels/BielRiste.jpg"; // Guerra civil
-import BielA1 from "../public/images/Biels/BielaA1.jpg"
-import BielOlhar from "../public/images/Biels/Bielolhar.jpg"
 
 //Novela Reis
-import NovelaReis from "../public/images/NovelaReis/NovelaReis.jpg";
-import VigiaDeCana from "../public/images/NovelaReis/VigiaDeCana.jpg";
 import CapaNovela from "../public/images/NovelaReis/CapaNovela.jpg";
 import Novel from "../public/images/NovelaReis/Novel.jpg";
+import NovelaReis from "../public/images/NovelaReis/NovelaReis.jpg";
 import RecordTV from "../public/images/NovelaReis/RecordTV.jpg";
+import VigiaDeCana from "../public/images/NovelaReis/VigiaDeCana.jpg";
 
 //Sky
 import Leleko from "../public/images/Sky/leleko.jpg";
@@ -24,30 +24,30 @@ import Sky from "../public/images/Sky/sky.jpg";
 import SkyGirl from "../public/images/Sky/SkyGirl.jpg";
 
 //Vicente na Cidade Fantasma
-import Susto from "../public/images/CidadeFantasma/susto.jpg"
-import Arrepiado from "../public/images/CidadeFantasma/arrepiado.jpg"
-import Aspirando from "../public/images/CidadeFantasma/aspirando.jpg"
-import Cena from "../public/images/CidadeFantasma/cena.jpg"
-import Correndo from "../public/images/CidadeFantasma/correndo.jpg"
-import Mirando from "../public/images/CidadeFantasma/mirando.jpg"
-import Susto2 from "../public/images/CidadeFantasma/susto2.jpg"
+import Arrepiado from "../public/images/CidadeFantasma/arrepiado.jpg";
+import Aspirando from "../public/images/CidadeFantasma/aspirando.jpg";
+import Cena from "../public/images/CidadeFantasma/cena.jpg";
+import Correndo from "../public/images/CidadeFantasma/correndo.jpg";
+import Mirando from "../public/images/CidadeFantasma/mirando.jpg";
+import Susto from "../public/images/CidadeFantasma/susto.jpg";
+import Susto2 from "../public/images/CidadeFantasma/susto2.jpg";
 
 //Icones
-import TV from "../public/images/Icones/tv.png"
-import Desfile from "../public/images/Icones/desfile.png"
-import Novela from "../public/images/Icones/novela.png"
-import Editorial from "../public/images/Icones/editorial.png"
-import Serie from "../public/images/Icones/serie.png"
-import Campanha from "../public/images/Icones/campanha.png"
-import Comercial from "../public/images/Icones/comercial.png"
+import Campanha from "../public/images/Icones/campanha.png";
+import Comercial from "../public/images/Icones/comercial.png";
+import Desfile from "../public/images/Icones/desfile.png";
+import Editorial from "../public/images/Icones/editorial.png";
+import Novela from "../public/images/Icones/novela.png";
+import Serie from "../public/images/Icones/serie.png";
+import TV from "../public/images/Icones/tv.png";
 
+import Parallax from '../components/parallax';
 import Transitions from '../components/transicao';
-import Parallax from '../components/parallax'
 
-import 'primeicons/primeicons.css';
-import 'primereact/resources/themes/lara-light-indigo/theme.css';
-import 'primereact/resources/primereact.css';
 import 'primeflex/primeflex.css';
+import 'primeicons/primeicons.css';
+import 'primereact/resources/primereact.css';
+import 'primereact/resources/themes/lara-light-indigo/theme.css';
 
 export default function Home() {
   useEffect(() => {
@@ -137,38 +137,38 @@ export default function Home() {
                 [
                   {
                     h4: "Desfiles",
-                    p: "Feira Opera 2020/21, Catwalk internacional, Aquarela Nacional, Passarela produção Brasil como Mister São Paulo.",
-                    img: Desfile
+                    "p": "Feira Opera 2020/21, Catwalk internacional, Aquarela Nacional, Passarela produção Brasil como Mister São Paulo.",
+                    "img": Desfile
                   },
                   {
                     h4: "Catálogos e campanhas",
-                    p: "Oliver Kids, Malwee, Hering, Ellus, Demanos, Puket, Pistol Star e Hershey&apos;s.",
-                    img: Campanha
+                    "p": "Oliver Kids, Malwee, Hering, Ellus, Demanos, Puket, Pistol Star e Hershey&apos;s.",
+                    "img": Campanha
                   },
                   {
                     h4: "Novelas",
-                    p: "As aventuras de Poliana SBT e Novela Reis da Record tv através da agência Cintra",
-                    img: Novela
+                    "p": "As aventuras de Poliana SBT e Novela Reis da Record tv através da agência Cintra",
+                    "img": Novela
                   },
                   {
                     h4: "Séries",
-                    p: "Escolinha Ecológica NGT TV e Bugados Globo play",
-                    img: Serie
+                    "p": "Escolinha Ecológica NGT TV e Bugados Globo play",
+                    "img": Serie
                   },
                   {
                     h4: "TV",
-                    p: "personagem LIPI na tv SKY, programa de humor infantil exibido todos os sábados",
-                    img: TV
+                    "p": "personagem LIPI na tv SKY, programa de humor infantil exibido todos os sábados",
+                    "img": TV
                   },
                   {
                     h4: "Comerciais",
-                    p: "Prefeitura de Sorocaba, Itau, Bradesco",
-                    img: Comercial
+                    "p": "Prefeitura de Sorocaba, Itau, Bradesco",
+                    "img": Comercial
                   },
-                  {
+                  { 
                     h4: "Editoriais",
-                    p: "Villy Ribeiro, Luciana Kajaer, Márcio Falcão",
-                    img: Editorial
+                    "p": "Villy Ribeiro, Luciana Kajaer, Márcio Falcão",
+                    "img": Editorial
                   },
                 ].map(({ h4, p, img }, key) => <div data-inviewport="slide-p-in" key={key}>
                   <div className="ImageContainer">
