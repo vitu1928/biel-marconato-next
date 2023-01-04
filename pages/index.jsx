@@ -117,22 +117,23 @@ export default function Home() {
             seu lado divertido através dos reels de comédia.
           </p>
         </article>
-        <div>
-          <Image
+        <aside>
+          {/* <Image
             layout='intrinsic'
-            objectFit='contain'
+            objectFit='cover'
             objectPosition={"center center"}
             src={BielOlhar}
-          />
-        </div>
+            unoptimized={true}
+          /> */}
+        </aside>
       </section>
 
       <section id="artista">
         <h2>Artista</h2>
         <article>
           <h3>Trabalhos Realizados</h3>
-          <div id="tr">
-            <div id="TransparentBlack">
+          <div id="TrabalhosRealizados">
+            <ul id="TransparentBlack">
               {
                 [
                   {
@@ -170,7 +171,7 @@ export default function Home() {
                     "p": "Villy Ribeiro, Luciana Kajaer, Márcio Falcão",
                     "img": Editorial
                   },
-                ].map(({ h4, p, img }, key) => <div data-inviewport="slide-p-in" key={key}>
+                ].map(({ h4, p, img }, key) => <li data-inviewport="slide-p-in" key={key}>
                   <div className="ImageContainer">
                     <img
                       src={img.src}
@@ -179,9 +180,9 @@ export default function Home() {
                   </div>
                   <h4>{h4}</h4>
                   <p>{p}</p>
-                </div>)
+                </li>)
               }
-            </div>
+            </ul>
           </div>
         </article>
 
@@ -255,6 +256,7 @@ export default function Home() {
             </li>
             <li>
               <Carousel
+                data-inviewport="scale-in"
                 // data-inviewport="scale-in"
                 value={[Susto, Arrepiado, Aspirando, Cena, Correndo, Mirando, Susto2]}
                 numVisible={1}
