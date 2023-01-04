@@ -23,12 +23,16 @@
     justify-content: space-between;
     flex-direction: column;
 
-    font-size: clamp(25px, 4vw, 70px); // 40px
+    // font-size: clamp(25px, 4vw, 70px); // 40px
+
+    h1 {
+        font-size: calc(max(8vw, 8vh));
+    }
 
     h4 {
         font-weight: bolder;
         padding: 0px 5vw;
-        font-size: calc(max(9vw, 9vh));
+        font-size: calc(max(8vw, 8vh));
         margin: 1vw;
     }
 }

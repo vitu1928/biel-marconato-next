@@ -2,18 +2,18 @@ import Imgbox from "../../components/imgbox";
 import Parallax from "../../components/parallax";
 import Transitions from "../../components/transicao";
 
-import { SectionAparicoes } from "./style.module.scss";
+import { SectionClipping } from "./style.module.scss";
 
 import BielRio from "../../public/images/Biels/BielRio.jpg";
 
-export default function Aparicoes() {
+export default function Clipping() {
     const lugares = require("./lugares.json")
 
     return (
         <>
             <Transitions>
                 <Parallax img={BielRio} />
-                <section className={SectionAparicoes}>
+                <section className={SectionClipping}>
                     <h2>Na mídia</h2>
                     <article>
                         <ul type="none">

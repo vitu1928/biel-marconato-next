@@ -165,7 +165,7 @@ export default function Home() {
                     "p": "Prefeitura de Sorocaba, Itau, Bradesco",
                     "img": Comercial
                   },
-                  { 
+                  {
                     h4: "Editoriais",
                     "p": "Villy Ribeiro, Luciana Kajaer, Márcio Falcão",
                     "img": Editorial

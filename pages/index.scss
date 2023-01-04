@@ -82,6 +82,8 @@ main {
         &#sobre {
             flex-direction: row;
 
+            // font-size: 3vh;
+
             margin: 20px;
             line-height: 1.5em;
             padding: 20px;
@@ -103,7 +105,7 @@ main {
 
             line-height: 2em;
 
-            > article {
+            >article {
                 display: flex;
                 flex-direction: column;
                 text-align: center;
@@ -122,10 +124,11 @@ main {
                     background-attachment: scroll;
                     background-position: top center;
                 }
-            
+
                 @supports not (-webkit-touch-callout: none) {
                     background-attachment: fixed;
                 }
+
                 background-size: cover;
                 box-shadow: inset 0px 0px 54px -9px #00000066;
 
@@ -140,6 +143,7 @@ main {
 
             #TransparentBlack {
                 height: 100%;
+                width: 100%;
                 padding: 20px;
 
                 display: flex;
@@ -155,8 +159,14 @@ main {
                 color: white;
                 background-color: rgba(0, 0, 0, 0.5);
 
-                h4, p { margin: 20px 0px; }
-                h4 { font-size: 20px;}
+                h4,
+                p {
+                    margin: 20px 0px;
+                }
+
+                h4 {
+                    font-size: 20px;
+                }
 
                 div {
                     display: flex;
@@ -164,16 +174,26 @@ main {
                     flex-direction: column;
                     flex-wrap: nowrap;
                     align-content: center;
-                    justify-content: center;
+                    // justify-content: center;
                     width: 300px;
+
+                    &:nth-child(-n+3) {
+                        flex-grow: 2;
+                        flex-basis: 0;
+                    }
+
+                    &:nth-child(n+4) {
+                        flex-grow: 1;
+                        flex-basis: 0;
+
+                    }
                 }
+
             }
 
         }
 
-        
-
-        &#aparicoes {
+        &#Clipping {
             align-items: center;
             justify-content: center;
             padding: 40px;
@@ -232,7 +252,7 @@ div#tr[data-inviewport="slide-p-in"].is-inViewport {
 
 @media only screen and (max-width: 865px) {
     section {
-        &#aparicoes {
+        &#Clipping {
             grid-template: "gallery1 gallery2" "img1 img2";
         }
 
