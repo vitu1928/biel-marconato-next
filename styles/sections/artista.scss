@@ -1,0 +1,95 @@
+section#artista {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    line-height: 2em;
+
+    > article {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    div#TrabalhosRealizados {
+        background-image: url(/images/Biels/BielAperto.jpg);
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.322);
+
+        @supports (-webkit-touch-callout: none) {
+            background-attachment: scroll;
+            background-position: top center;
+        }
+
+        @supports not (-webkit-touch-callout: none) {
+            background-attachment: fixed;
+        }
+
+        background-size: cover;
+        box-shadow: inset 0px 0px 54px -9px #00000066;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+    }
+
+
+    ul#TransparentBlack {
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+
+        display: flex;
+        min-height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: baseline;
+        gap: 10px;
+
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        h4,
+        p {
+            margin: 1vw 0px;
+            font-size: 1vw;
+            line-height: 1.5vw;
+        }
+
+        h4 {
+            font-size: 2vw;
+        }
+
+        li {
+            // display: block;
+            
+            width: 30vw;
+
+            .ImageContainer>img {
+                width: calc(min(10vh, 10vw));
+            }
+        }
+    }
+
+    #TrabalhosRecentes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            // width: 50vw;
+        }
+    }
+}

@@ -27,7 +27,7 @@ export default function Contatos() {
                             width={100}
                             height={50}
                         />
-                        Gislaine
+                        Agência Cintra
                     </a>
                     <a 
                         href="mailto:assessoriabielmarconato@gmail.com"

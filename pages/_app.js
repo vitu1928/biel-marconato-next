@@ -1,12 +1,20 @@
 import { NextSeo } from 'next-seo';
+import Head from 'next/head';
 
 import Contatos from '../components/contatos';
 
-import './index.scss';
+import '../styles/global.scss'
+import '../styles/sections/artista.scss'
+import '../styles/sections/clipping.scss'
+import '../styles/sections/sobre.scss'
 
 export default function MyApp({ Component, pageProps }) {
 
   return <>
+    <Head>
+      <link rel="icon" href="images/Biels/favicon-32x32.png" />
+
+    </Head>
     <NextSeo
       title="Biel Marconato"
       description="Biel Marconato Ator e modelo"
@@ -27,9 +35,6 @@ export default function MyApp({ Component, pageProps }) {
         siteName: 'Biel Marconato',
       }}
     />
-
-    <link rel="icon" href="images/Biels/favicon-32x32.png" />
-
     <Component {...pageProps} />
 
     <footer>
