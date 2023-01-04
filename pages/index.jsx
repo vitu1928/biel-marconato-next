@@ -188,6 +188,57 @@ export default function Home() {
 
         <article>
           <h3>Trabalhos Recentes</h3>
+          <div>
+            <Image
+              layout='intrinsic'
+              objectFit='cover'
+              objectPosition={"top center"}
+              src={BielRiste}
+              width={500}
+              height={500}
+              data-inviewport="scale-in"
+            />
+            <p><strong>Filme</strong>: Guerra Cívil
+              Personagem: Michelângelo (protagonista)
+              Direção Flavio Carnielli</p>
+          </div>
+          <div>
+            <Carousel
+              data-inviewport="scale-in"
+              value={[Susto, Arrepiado, Aspirando, Cena, Correndo, Mirando, Susto2]}
+              numVisible={1}
+              numScroll={1}
+              className="custom-carousel"
+              autoplayInterval={2000}
+              itemTemplate={workImages}
+              footer={<p><strong>Filme</strong>: Vicente na cidade Fantasma
+                Personagem: Vicente (protagonista)</p>}
+            />
+          </div>
+          <div>
+            <Carousel
+              data-inviewport="scale-in"
+              value={[CapaNovela, NovelaReis, VigiaDeCana, Novel, RecordTV]}
+              numVisible={1}
+              numScroll={1}
+              className="custom-carousel"
+              autoplayInterval={3000}
+              itemTemplate={workImages}
+              footer={<p><strong>Novela:</strong> Reis</p>}
+            />
+          </div>
+          <div>
+            <Carousel
+              data-inviewport="scale-in"
+              value={[Leleko, Palhaco, Lipi, SkyGirl, Sky]}
+              numVisible={1}
+              numScroll={1}
+              className="custom-carousel"
+              autoplayInterval={3000}
+              itemTemplate={workImages}
+              footer={<p><strong>Programa de comédia:</strong> SKY TV como Lipi</p>}
+            />
+          </div>
           <ul id="TrabalhosRecentes">
             <li>
               <Image
@@ -206,6 +257,7 @@ export default function Home() {
             <li>
               <Carousel
                 data-inviewport="scale-in"
+                // data-inviewport="scale-in"
                 value={[Susto, Arrepiado, Aspirando, Cena, Correndo, Mirando, Susto2]}
                 numVisible={1}
                 numScroll={1}
