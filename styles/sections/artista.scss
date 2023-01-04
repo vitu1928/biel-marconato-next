@@ -60,22 +60,22 @@ section#artista {
 
         h4,
         p {
-            margin: 1vw 0px;
-            font-size: 1vw;
-            line-height: 1.5vw;
+            margin: 1vh 0px;
+            font-size: calc(max(1.5vh, 0.9vw));
+            line-height: 2.5vh;
         }
 
         h4 {
-            font-size: 2vw;
+            font-size: 2.6vh;
         }
 
         li {
             // display: block;
             
-            width: 30vw;
+            width: 40vh;
 
             .ImageContainer>img {
-                width: calc(min(10vh, 10vw));
+                width: calc(min(10vh, 20vw));
             }
         }
     }
