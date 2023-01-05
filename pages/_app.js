@@ -7,6 +7,8 @@ import '../styles/global.scss'
 import '../styles/sections/artista.scss'
 import '../styles/sections/clipping.scss'
 import '../styles/sections/sobre.scss'
+import '../styles/sections/modelo.scss'
+import '../styles/sections/diretores.scss'
 
 export default function MyApp({ Component, pageProps }) {
 

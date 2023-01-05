@@ -18,25 +18,12 @@ import Transitions from '../../components/transicao'
 import { GaleriaModelo, GaleriaDiretores, GaleriaImg } from "./style.module.scss"
 
 export default function Galeria() {
-    function mapGridArea(v, index) {
-        return <div
-            style={{ gridArea: v.src.split("/").pop().split(".").shift() }}
-            key={index}
-        >
-            <Image
-                objectFit="cover"
-                layout='intrinsic'
-                objectPosition={"center center"}
-                src={v}
-            />
-        </div>
-    }
     return (
         <Transitions>
             <Parallax img={Bielcruzado} title="Galeria" />
-            <section>
+            <section className="modelo">
                 <article className={GaleriaModelo}>
-                    <div id="galeria">
+                    <ul id="galeria">
                         {[
                             BielS2,
                             BielRiste,
@@ -44,15 +31,26 @@ export default function Galeria() {
                             Bielcruzado,
                             Bielolhar,
                             BielRio,
-                        ].map(mapGridArea)}
-                    </div>
-                    <h2 >Modelo</h2>
+                        ].map((v, index) => {
+                            return <li
+                                style={{ gridArea: v.src.split("/").pop().split(".").shift() }}
+                                key={index}
+                            >
+                                <Image
+                                    layout='responsive'
+                                    objectPosition={"center center"}
+                                    src={v}
+                                />
+                            </li>
+                        })}
+                    </ul>
+                    <h2>Modelo</h2>
                 </article>
             </section>
             <section id="diretores">
                 <article className={GaleriaDiretores}>
                     <h2>Diretores</h2>
-                    <div id="diretores">
+                    <ul>
                         {
                             [
                                 {
@@ -72,23 +70,23 @@ export default function Galeria() {
                                     name: "Gabriela Rosales"
                                 }
                             ].map(({ img, name }, k) => {
-                                return <div
+                                return <li
                                     key={k}
                                     className={GaleriaImg}
                                 >
                                     <div>
                                         <Image
-                                            objectFit="cover"
-                                            layout='intrinsic'
+                                            // objectFit="cover"
+                                            layout='responsive'
                                             objectPosition={"center center"}
                                             src={img}
                                         />
                                     </div>
                                     <h3>{name}</h3>
-                                </div>
+                                </li>
                             })
                         }
-                    </div>
+                    </ul>
                 </article>
             </section>
         </Transitions>

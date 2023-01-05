@@ -4,15 +4,6 @@ section#artista {
 
     line-height: 2em;
 
-    > article {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-content: center;
-        flex-wrap: wrap;
-    }
-
-
     div#TrabalhosRealizados {
         background-image: url(/images/Biels/BielAperto.jpg);
         background-repeat: no-repeat;
@@ -71,7 +62,7 @@ section#artista {
 
         li {
             // display: block;
-            
+
             width: 40vh;
 
             .ImageContainer>img {
@@ -82,14 +73,27 @@ section#artista {
 
     #TrabalhosRecentes {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         align-content: center;
         justify-content: center;
         align-items: center;
+        text-align: center;
 
-        li {
-            // width: 50vw;
+        padding: 0;
+        margin: 0;
+
+        > li:nth-child(n+2) {
+            display: contents;
         }
+
+        .TrabRecentItem {
+            width: calc(max(55vw, 50%));
+        }
+
+        .Description {
+            font-size: calc(max(1.3vh, 1.4vw));
+            line-height: calc(max(1.3vh, 1.4vw));
+        }
+
     }
 }

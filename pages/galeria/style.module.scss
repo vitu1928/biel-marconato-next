@@ -7,7 +7,7 @@
         margin-right: 0;
     }
 
-    > div {
+    > ul {
         display: grid;
 
         padding: 5vw;
@@ -16,10 +16,16 @@
         align-items: center;
         justify-content: center;
 
-        @media only screen and (min-width: 865px) {
-            grid-template:
-                "BielRiste BielS2 BielSentado"
-                "Bielcruzado Bielolhar BielRio";
+        grid-template:
+            "BielRiste BielS2 BielSentado"
+            "Bielcruzado Bielolhar BielRio";
+
+        li {
+            width: 22vw;
+
+            @media only screen and (max-width: 865px) {
+                width: 30vw !important;
+            }
         }
     }
 
@@ -32,12 +38,12 @@
             writing-mode: horizontal-tb;
         }
 
-        >div {
-            grid-template: "BielS2 BielSentado"
-                "BielRiste BielRiste"
-                "BielRio Bielcruzado"
-                "Bielolhar Bielolhar";
-        }
+        // ul {
+        //     grid-template: "BielS2 BielSentado"
+        //         "BielRiste BielRiste"
+        //         "BielRio Bielcruzado"
+        //         "Bielolhar Bielolhar";
+        // }
     }
 }
 
@@ -52,12 +58,16 @@
         transform: rotate(180deg);
     }
 
-    >div {
+    > ul {
         display: grid;
         padding: 5vw;
         grid-gap: 10px;
 
         grid-template-columns: 1fr 1fr;
+
+        li {
+            width: 40vw;
+        }
     }
 
     @media only screen and (max-width: 865px) {
