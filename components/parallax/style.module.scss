@@ -19,20 +19,14 @@
     box-shadow: inset 0px 0px 54px -9px #00000066;
 
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    align-content: center;
 
     // font-size: clamp(25px, 4vw, 70px); // 40px
 
     h1 {
         font-size: calc(max(8vw, 5vh));
-    }
-
-    h4 {
-        font-weight: bolder;
-        padding: 0px 5vw;
-        font-size: calc(max(8vw, 8vh));
-        margin: 1vw;
     }
 }

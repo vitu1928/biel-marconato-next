@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { BrowserView, MobileView } from 'react-device-detect';
 
@@ -7,9 +6,13 @@ import { BrowserView, MobileView } from 'react-device-detect';
 import { Details, NavMenu, Summary, Navigation, Header } from "./style.module.scss"
 
 export default function Menu() {
-    const router = useRouter();
-    const hrefs = require("../../public/hrefs.json")
-    
+    const hrefs = {
+        "/": "Sobre",
+        "/galeria": "Galeria",
+        "/clipping": "Clipping",
+        "#contatos": "Contatos"
+    }
+
     useEffect(() => {
         const debounce = (fn) => {
             let frame;
@@ -31,7 +34,7 @@ export default function Menu() {
                 <nav className={Navigation} id="navigation">
                     <ul>
                         {
-                            Object.entries(hrefs).map(([k, v], i) => router.pathname != k && <li key={i}>
+                            Object.entries(hrefs).map(([k, v], i) => <li key={i}>
                                 <Link href={k}>{v.toUpperCase()}</Link>
                             </li>)
                         }
