@@ -79,9 +79,7 @@ export default function Home() {
 
   return (
     <Transitions>
-      <Parallax
-        img={BielA1}
-      />
+      <Parallax img={BielA1}/>
       <section id="sobre" data-inviewport="slide-in">
         <article>
           <h2>ator - modelo - influencer</h2>
@@ -118,13 +116,11 @@ export default function Home() {
           </p>
         </article>
         <aside>
-          {/* <Image
-            layout='intrinsic'
-            objectFit='cover'
+          <Image
+            layout='responsive'
             objectPosition={"center center"}
             src={BielOlhar}
-            unoptimized={true}
-          /> */}
+          />
         </aside>
       </section>
 
