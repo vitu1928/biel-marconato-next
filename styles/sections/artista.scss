@@ -87,12 +87,12 @@ section#artista {
         }
 
         .TrabRecentItem {
-            width: calc(max(55vw, 50%));
+            width: calc(min(90vw, 70vh));
         }
 
         .Description {
             font-size: calc(max(1.3vh, 1.4vw));
-            line-height: calc(max(1.3vh, 1.4vw));
+            line-height: calc(max(1.4vh, 1.5vw));
         }
 
     }
