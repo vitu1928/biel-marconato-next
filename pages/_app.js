@@ -42,7 +42,7 @@ export default function MyApp({ Component, pageProps }) {
     <footer>
       <Contatos />
 
-      <address>2022 © por Victor</address>
+      {/* <address>2022 © por Victor</address> */}
     </footer>
   </>
 }

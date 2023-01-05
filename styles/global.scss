@@ -57,7 +57,7 @@ h3 {
 }
 
 p { 
-    // font-size: calc(max(1.5vh, 0.9vw)) !important;
+    // font-size: calc(max(1.5vh, 0.9vw));
     // line-height: 2.5vh !important;
 }
 
@@ -72,6 +72,7 @@ div {
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 main {
@@ -90,10 +91,10 @@ footer {
         text-align: center;
     }
 
-    address {
-        text-align: center;
-        visibility: hidden;
-    }
+    // address {
+    //     text-align: center;
+    //     visibility: hidden;
+    // }
 }
 
 /* inViewport */
