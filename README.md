@@ -1,2 +1,2 @@
 # biel-marconato-next
- About Biel Marconato
+Portfólio do ator e modelo Biel Marconato feito com NextJS
