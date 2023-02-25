@@ -33,7 +33,7 @@
 <div>
     <h2>Responsividade</h2>
     <div align="center">
-        <img src=".github/responsive.gif" alt="Gif da página inicial" width="800px">
+        <kbd><img src=".github/responsive.gif" alt="Gif da página inicial" width="800px"></kbd>
     </div>
 </div>
 <div align="center">
@@ -61,6 +61,6 @@
                 <a href="https://steamcommunity.com/profiles/76561199090763008/">
                     <img src="https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white">
                 </a>
+            </div>
         </kbd>
-        <div>
-        </div>
+    </div>
