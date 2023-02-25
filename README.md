@@ -1,4 +1,8 @@
-<h1 align="center">Biel Marconato Portfolio</h1>
+<h1 align="center">
+    <a href="https://www.bielmarconato.com.br/">
+        Biel Marconato Portfolio
+    </a>
+</h1>
 
 <ul type="none" align="center">
     <li>
@@ -10,8 +14,10 @@
         <a href="https://www.framer.com/motion/"><img src="https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue" height="35px"></a>
 </ul>
 <div>
-    <blockquote>Portfolio de Biel Marconato</blockquote>
-    Ampliar e aplicar meus conhecimentos de desenvolvimento front-end utilizando NextJS
+    <p>
+        <blockquote>Portfolio de Biel Marconato</blockquote>
+    Meu objetivo foi ampliar e aplicar meus conhecimentos de desenvolvimento front-end, principalmente na responsividade, utilizando das seguintes ferramentas: NextJS, SASS e Framer.
+    </p>
 </div>
 <div>
     <div>
@@ -35,6 +41,42 @@
     <div align="center">
         <kbd><img src=".github/responsive.gif" alt="Gif da página inicial" width="800px"></kbd>
     </div>
+</div>
+
+<div>
+    <h2>Infraestrutura</h2>
+    <ul type="none">
+        <li>
+            <blockquote>
+                Sobre
+                <ul>
+                    <li> ator - modelo - influencer
+                    <li> Artista
+                        <ul>
+                            <li> Trabalhos Recentes
+                            <li> Trabalhos Realizados
+                        </ul>
+                    <li> Contatos
+                </ul>
+            </blockquote>
+        <li>
+            <blockquote>
+                Galeria
+                <ul>
+                    <li> Modelo
+                    <li> Diretores
+                    <li> Contatos
+                </ul>
+            </blockquote>
+        <li>
+            <blockquote>
+                Clipping
+                <ul>
+                    <li> Na mídia
+                    <li> Contatos
+                </ul>
+            </blockquote>
+    </ul>
 </div>
 <div align="center">
     <div>
