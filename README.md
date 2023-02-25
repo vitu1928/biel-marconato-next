@@ -1,37 +1,21 @@
 <h1 align="center">Biel Marconato Portfolio</h1>
-<div align="center">
-    <p>Portfolio de Biel Marconato</p>
-    <img src="https://img.shields.io/github/license/vitu1928/TaskManager?style=for-the-badge">
-</div>
 
+ <ul type="none" align="center">
+        <li>
+          <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" height="35px">
+          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" height="35px">
+          <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" height="35px"></a>
+          <a href="https://nodejs.org/pt-br/"><img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" height="35px"></a>
+          <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" height="35px">
+          <a href="https://www.framer.com/motion/"><img src="https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue" height="35px"></a>
+    </ul>
 <div>
-    <p align="center">
-        <a href="#objetivo">Objetivo</a> •
-        <a href="#preview">Preview</a> •
-        <a href="#tecnologias">Tecnologias</a> •
-        <a href="#autor">Autor</a>
-    </p>
-</div>
-<div>
-    <h2>Objetivo</h2>
-    <p>Ampliar e aplicar meus conhecimentos de desenvolvimento front-end utilizando NextJS</p>
+    <blockquote>Portfolio de Biel Marconato</blockquote>
+    <img src="https://img.shields.io/github/license/vitu1928/TaskManager?style=for-the-badge">
+    Ampliar e aplicar meus conhecimentos de desenvolvimento front-end utilizando NextJS
 </div>
 <div>
     <h2>Tecnologias</h2>
-    <ul type="none">
-        <li>
-          <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-        <li>
-          <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"></a>
-          <a href="https://nodejs.org/pt-br/"><img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"></a>
-        <li>
-          <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-          <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-        <a href="https://www.framer.com/motion/">
-          <img src="https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue">
-        </a>
-    </ul>
 </div>
 
 <div>
@@ -59,8 +43,8 @@
         <a href="https://www.linkedin.com/in/victor-garcia-707824264/">
             <img src="https://img.shields.io/badge/-Victor-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/victor-garcia-707824264/" alt="Linkedin Badge">
         </a>
-        <a href="https://open.spotify.com/user/ag9fvbbfcik329yxqnizyjhw8?si=ada50f36dbf347e4">
-            <img src="https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white">
+        <a href="https://stackoverflow.com/users/17405168/vizy">
+            <img src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white">
         </a>
         <br />
     </div>
