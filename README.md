@@ -16,7 +16,7 @@
 <div>
     <div>
         <h2>Preview</h2>
-        <table>
+        <table align="center">
             <tr>
                 <td><img src=".github/pginit.gif" alt="Gif da página inicial" width="470px"></td>
                 <td><img src=".github/pginit_mobile.gif" alt="Gif da página inicial" width="470px"></td>
@@ -32,12 +32,14 @@
 
 <div>
     <h2>Responsividade</h2>
-    <img src=".github/responsive.gif" alt="Gif da página inicial" width="500px">
+    <div align="center">
+        <img src=".github/responsive.gif" alt="Gif da página inicial" width="800px">
+    </div>
 </div>
 <div align="center">
     <div>
         <kbd>
-            <h2>Autor</h2>
+            <h2>Victor T.</h2>
             <div>
                 <a href="https://www.linkedin.com/in/victor-garcia-707824264/">
                     <img src="https://img.shields.io/badge/-Victor-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/victor-garcia-707824264/" alt="Linkedin Badge">
@@ -50,7 +52,6 @@
             <a href="https://github.com/vitu1928">
                 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/58984150?v=4" width="100px;" alt="Victor Github Profile's Image" />
                 <br />
-                <sub><b>Victor T.</b></sub>
             </a>
             <div>
                 <br />
