@@ -92,7 +92,7 @@
                 <br />
             </div>
             <a href="https://github.com/vitu1928">
-                <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/58984150?v=4" width="100px;" alt="Victor Github Profile's Image" />
+                <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/58984150?v=4" width="135px;" alt="Victor Github Profile's Image" />
                 <br />
             </a>
             <div>
@@ -106,3 +106,4 @@
             </div>
         </kbd>
     </div>
+</div>
