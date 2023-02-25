@@ -18,24 +18,24 @@
         <h2>Preview</h2>
         <table>
             <tr>
-                <td><img src=".github/pginit.gif" alt="Gif da página inicial" width="500px"></td>
-                <td><img src=".github/responsive.gif" alt="Gif da página inicial" width="500px"></td>
-                <td><img src=".github/pginit_mobile.gif" alt="Gif da página inicial" width="500px"></td>
+                <td><img src=".github/pginit.gif" alt="Gif da página inicial" width="470px"></td>
+                <td><img src=".github/pginit_mobile.gif" alt="Gif da página inicial" width="470px"></td>
             </tr>
             <tr>
-                <td>Página inicial</td>
-                <td>Galeria</td>
-                <td>Pa</td>
+                <td>Página inicial - PC</td>
+                <td>Página inicial - Celular</td>
             </tr>
         </table>
     </div>
 </div>
 <br />
+
+<div>
+    <h2>Responsividade</h2>
+    <img src=".github/responsive.gif" alt="Gif da página inicial" width="500px">
+</div>
 <div align="center">
     <div>
-        <!--     <a href="">
-      <img src="https://img.shields.io/github/license/vitu1928/biel-marconato-next?style=for-the-badge">
-    </a> -->
         <kbd>
             <h2>Autor</h2>
             <div>
