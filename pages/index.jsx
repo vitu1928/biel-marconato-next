@@ -84,7 +84,7 @@ export default function Home() {
         <article>
           <h2>ator - modelo - influencer</h2>
           <p>
-            Biel Marconato, 12 anos, atua no meio audiovisual como
+            Biel Marconato, 14 anos, atua no meio audiovisual como
             ator, modelo e influencer. É um menino que está sempre
             buscando se aprimorar e se atualizar.
           </p>
