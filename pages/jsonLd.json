@@ -1,0 +1,157 @@
+{
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "name": "Biel Marconato",
+    "url": "https://www.bielmarconato.com.br",
+    "description": "Ator Biel Marconato. Confira o trabalho de Biel em filmes e séries.",
+    "image": "https://bielmarconato.com.br/images/Biels/BielaA1.jpg",
+    "sameAs": [
+      "https://www.facebook.com/bielmarconatho/",
+      "https://www.instagram.com/bielmarconato/",
+      "https://elencodigital.com.br/BielMarconato",
+      "https://www.youtube.com/user/Meualvoecristomac"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Biel Marconato",
+      "url": "https://www.bielmarconato.com.br"
+    },
+    "specialty": "Atuação em Filmes e Teledramaturgia",
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://bielmarconato.com.br/images/Biels/BielaA1.jpg",
+      "width": 1200,
+      "height": 800,
+      "caption": "Imagem de Biel Marconato"
+    },
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Biel Marconato",
+      "url": "https://www.bielmarconato.com.br",
+      "image": "https://bielmarconato.com.br/images/Biels/BielaA1.jpg",
+      "sameAs": [
+        "https://www.facebook.com/bielmarconatho/",
+        "https://www.instagram.com/bielmarconato/"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Biel Marconato"
+      },
+      "actorOf": [
+        {
+          "@type": "CreativeWork",
+          "name": "Guerra Cívil",
+          "character": {
+            "@type": "Person",
+            "name": "Michelângelo"
+          },
+          "director": {
+            "@type": "Person",
+            "name": "Flávio Carnielli"
+          }
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Vicente na Cidade Fantasma",
+          "character": {
+            "@type": "Person",
+            "name": "Vicente"
+          }
+        }
+      ]
+    },
+    "mainContentOfPage": {
+      "@type": "WebPageElement",
+      "name": "Conteúdo Principal",
+      "cssSelector": "#sobre",
+      "hasPart": [
+        {
+          "@type": "WebPageElement",
+          "name": "Biografia de Biel Marconato",
+          "image": "https://bielmarconato.com.br/images/Biels/Bielolhar.jpg",
+          "cssSelector": "#sobre > article",
+          "mainEntityOfPage": {
+            "@type": "Article",
+            "headline": "Biografia de Biel Marconato",
+            "articleBody": "Biel Marconato é um ator brasileiro conhecido por sua atuação em filmes e novelas...",
+            "author": {
+              "@type": "Person",
+              "name": "Biel Marconato"
+            }
+          }
+        },
+        {
+          "@type": "WebPageElement",
+          "name": "Trabalhos de Biel Marconato",
+          "cssSelector": "#artista"
+        },
+        {
+          "@type": "WebPageElement",
+          "name": "Contato de Biel Marconato",
+          "cssSelector": "#contatos"
+        }
+      ]
+    },
+    "actorOf": [
+      {
+        "@type": "Movie",
+        "name": "Guerra Cívil",
+        "url": "https://www.bielmarconato.com.br/filmes/guerra-civil",
+        "description": "Filme Guerra Cívil, protagonizado por Michelângelo, direção de Flávio Carnielli.",
+        "image": "https://bielmarconato.com.br/images/filmes/guerra-civil.jpg",
+        "actor": {
+          "@type": "Person",
+          "name": "Biel Marconato"
+        },
+        "character": {
+          "@type": "Person",
+          "name": "Michelângelo"
+        },
+        "director": {
+          "@type": "Person",
+          "name": "Flávio Carnielli"
+        }
+      },
+      {
+        "@type": "Movie",
+        "name": "Vicente na Cidade Fantasma",
+        "url": "https://www.bielmarconato.com.br/filmes/vicente-na-cidade-fantasma",
+        "description": "Filme Vicente na Cidade Fantasma, protagonizado por Vicente.",
+        "image": "https://bielmarconato.com.br/images/filmes/vicente-na-cidade-fantasma.jpg",
+        "actor": {
+          "@type": "Person",
+          "name": "Biel Marconato"
+        },
+        "character": {
+          "@type": "Person",
+          "name": "Vicente"
+        }
+      },
+      {
+        "@type": "TVSeries",
+        "name": "Reis",
+        "url": "https://www.bielmarconato.com.br/novelas/reis",
+        "description": "Novela Reis, onde Biel Marconato participa.",
+        "image": "https://bielmarconato.com.br/images/novelas/reis.jpg",
+        "actor": {
+          "@type": "Person",
+          "name": "Biel Marconato"
+        }
+      },
+      {
+        "@type": "TVSeries",
+        "name": "Programa de Comédia SKY TV",
+        "url": "https://www.bielmarconato.com.br/programas/sky-tv",
+        "description": "Programa de comédia na SKY TV, com Biel Marconato no papel de Lipi.",
+        "image": "https://bielmarconato.com.br/images/programas/sky-tv.jpg",
+        "actor": {
+          "@type": "Person",
+          "name": "Biel Marconato"
+        },
+        "character": {
+          "@type": "Person",
+          "name": "Lipi"
+        }
+      }
+    ]
+  }

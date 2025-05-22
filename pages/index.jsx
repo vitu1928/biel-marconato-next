@@ -49,7 +49,8 @@ import 'primeicons/primeicons.css';
 import 'primereact/resources/primereact.css';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
 
-import { BreadcrumbJsonLd, WebPageJsonLd, CarouselJsonLd, ProfilePageJsonLd} from 'next-seo';
+import { BreadcrumbJsonLd, CarouselJsonLd, NextSeo  } from 'next-seo';
+import Head from 'next/head';
 
 const allImages = [
   // Imagens de "Guerra Civil"
@@ -79,6 +80,7 @@ const allImages = [
   { url: Sky, name: "SKY TV - Imagem 5", description: "Comédia SKY TV com Biel Marconato como o personagem Sky." }
 ];
 
+const jsonLd = require('./jsonLd.json')
 
 export default function Home() {
   useEffect(() => {
@@ -110,21 +112,53 @@ export default function Home() {
 
   return (
     <>
-       
-      <ProfilePageJsonLd
-            name="Biel Marconato"
-            type="Person"
-            description="Ator Biel Marconato. Confira o trabalho de Biel em filmes e séries."
-            url="https://www.bielmarconato.com.br"
-            image="https://www.seusite.com.br/images/Biels/Bielcruzado.jpg"
-            sameAs={[
-            "https://www.facebook.com/bielmarconatho/",
-            "https://www.instagram.com/bielmarconato/",
-            "https://elencodigital.com.br/BielMarconato",
-            "https://www.youtube.com/user/Meualvoecristomac"
-          ]}
-      />
+      
+     <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd),
+          }}
+        />
 
+        
+      </Head>
+  <NextSeo
+      title="Biel Marconato"
+      description="Biel Marconato Ator e modelo"
+      canonical="https://www.bielmarconato.com.br/"
+      openGraph={{
+        url: 'https://bielmarconato.com.br/',
+        type: 'website',
+        title: 'Biel Marconato WebSite',
+        description: 'Site de Biel Marconato ',
+        images: [
+          {
+            url: "images/Biels/Biel90.jpg",
+            width: 90,
+            height: 90,
+            alt: 'Biel Marconato',
+            type: 'image/jpeg',
+          },
+          {
+            url: "images/Biels/Bielcruzado.jpg",
+            width: 640,
+            height: 640 ,
+            alt: 'Biel Marconato',
+            type: 'image/jpeg',
+          },
+          {
+            url: "images/Biels/Bielellus.jpeg",
+            width: 1080,
+            height: 1080 ,
+            alt: 'Biel Marconato',
+            type: 'image/jpeg',
+          }
+        ],
+        siteName: 'Biel Marconato',
+        
+      }}
+    /> 
      <CarouselJsonLd
         ofType="default"
         data={allImages.map((image, index) => ({
@@ -146,12 +180,7 @@ export default function Home() {
             },
           ]}
         />
-        <WebPageJsonLd
-          url="https://www.bielmarconato.com.br"
-          title="Biel Marconato - Ator"
-          description="Site oficial de Biel Marconato, ator, com informações sobre seu trabalho, carreira e projetos."
-          images={['https://www.bielmarconato.com.br/images/Bielcruzado.jpg']}
-        />
+        
       <Transitions>
         <Parallax img={BielA1}/>
         <section id="sobre" data-inviewport="slide-in">
