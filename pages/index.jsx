@@ -49,6 +49,37 @@ import 'primeicons/primeicons.css';
 import 'primereact/resources/primereact.css';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
 
+import { BreadcrumbJsonLd, WebPageJsonLd, CarouselJsonLd, ProfilePageJsonLd} from 'next-seo';
+
+const allImages = [
+  // Imagens de "Guerra Civil"
+  { url: BielRiste, name: "Guerra Civil - Imagem 1", description: "Filme Guerra Civil com Biel Marconato interpretando o protagonista Michelângelo." },
+  
+  // Imagens de "Vicente na Cidade Fantasma"
+  { url: Susto, name: "Vicente na Cidade Fantasma - Imagem 1", description: "Filme Vicente na Cidade Fantasma, protagonizado por Biel Marconato como Vicente." },
+  { url: Arrepiado, name: "Vicente na Cidade Fantasma - Imagem 2", description: "Filme Vicente na Cidade Fantasma, protagonizado por Biel Marconato como Vicente." },
+  { url: Aspirando, name: "Vicente na Cidade Fantasma - Imagem 3", description: "Filme Vicente na Cidade Fantasma, protagonizado por Biel Marconato como Vicente." },
+  { url: Cena, name: "Vicente na Cidade Fantasma - Imagem 4", description: "Filme Vicente na Cidade Fantasma, protagonizado por Biel Marconato como Vicente." },
+  { url: Correndo, name: "Vicente na Cidade Fantasma - Imagem 5", description: "Filme Vicente na Cidade Fantasma, protagonizado por Biel Marconato como Vicente." },
+  { url: Mirando, name: "Vicente na Cidade Fantasma - Imagem 6", description: "Filme Vicente na Cidade Fantasma, protagonizado por Biel Marconato como Vicente." },
+  { url: Susto2, name: "Vicente na Cidade Fantasma - Imagem 7", description: "Filme Vicente na Cidade Fantasma, protagonizado por Biel Marconato como Vicente." },
+  
+  // Imagens de "Novela Reis"
+  { url: CapaNovela, name: "Novela Reis - Imagem 1", description: "Novela Reis com a participação de Biel Marconato." },
+  { url: NovelaReis, name: "Novela Reis - Imagem 2", description: "Novela Reis com a participação de Biel Marconato." },
+  { url: VigiaDeCana, name: "Novela Reis - Imagem 3", description: "Novela Reis com a participação de Biel Marconato." },
+  { url: Novel, name: "Novela Reis - Imagem 4", description: "Novela Reis com a participação de Biel Marconato." },
+  { url: RecordTV, name: "Novela Reis - Imagem 5", description: "Novela Reis com a participação de Biel Marconato." },
+
+  // Imagens de "Comédia SKY TV"
+  { url: Leleko, name: "SKY TV - Imagem 1", description: "Comédia SKY TV com Biel Marconato como o personagem Leleko." },
+  { url: Palhaco, name: "SKY TV - Imagem 2", description: "Comédia SKY TV com Biel Marconato como o personagem Palhaço." },
+  { url: Lipi, name: "SKY TV - Imagem 3", description: "Comédia SKY TV com Biel Marconato como o personagem Lipi." },
+  { url: SkyGirl, name: "SKY TV - Imagem 4", description: "Comédia SKY TV com Biel Marconato como o personagem SkyGirl." },
+  { url: Sky, name: "SKY TV - Imagem 5", description: "Comédia SKY TV com Biel Marconato como o personagem Sky." }
+];
+
+
 export default function Home() {
   useEffect(() => {
     const inViewport = (entries, observer) => {
@@ -78,167 +109,211 @@ export default function Home() {
   }
 
   return (
-    <Transitions>
-      <Parallax img={BielA1}/>
-      <section id="sobre" data-inviewport="slide-in">
-        <article>
-          <h2>ator - modelo - influencer</h2>
-          <p>
-            Biel Marconato, 14 anos, atua no meio audiovisual como
-            ator, modelo e influencer. É um menino que está sempre
-            buscando se aprimorar e se atualizar.
-          </p>
-          <p>
-            <Tooltip target=".escola-oficina">
-              <Image
-                src={EscolaOficina}
-                width={200}
-                height={200}
-              />
-            </Tooltip>
-            Como parte da sua formação de ator, estuda há 1 ano na <span className="escola-oficina">Escola Oficina</span> e faz vários cursos e workshops através da agência Cintra com os melhores profissionais do mercado tais como
-            Márcio Trigo, Foguinho, Bruno Stuane, Thiago Coquelet, Márcia Ítalo, Cristina Bethencourt, Edgar Miranda entre outros. Em sua
-            carreira já participou de campanhas publicitárias, peças de
-            teatro e seriados de televisão.
-          </p>
-          <p>
-            Atualmente estuda piano; cinema; TV; sapateado e tem como
-            passatempo jogar videogame.
-          </p>
-          <p>
-            Em seu Instagram, Biel Marconato compartilha dicas de
-            moda, os bastidores das campanhas, gravações e também
-            dicas de estudos e línguas.
-          </p>
-          <p>
-            Estando sempre ligado na trend do momento, Biel mostra
-            seu lado divertido através dos reels de comédia.
-          </p>
-        </article>
-        <aside>
-          <Image
-            layout='responsive'
-            objectPosition={"center center"}
-            src={BielOlhar}
-          />
-        </aside>
-      </section>
+    <>
+       
+      <ProfilePageJsonLd
+            name="Biel Marconato"
+            type="Person"
+            description="Ator Biel Marconato. Confira o trabalho de Biel em filmes e séries."
+            url="https://www.bielmarconato.com.br"
+            image="https://www.seusite.com.br/images/Biels/Bielcruzado.jpg"
+            sameAs={[
+            "https://www.facebook.com/bielmarconatho/",
+            "https://www.instagram.com/bielmarconato/",
+            "https://elencodigital.com.br/BielMarconato",
+            "https://www.youtube.com/user/Meualvoecristomac"
+          ]}
+      />
 
-      <section id="artista">
-        <h2>Artista</h2>
-        <article>
-          <h3>Trabalhos Realizados</h3>
-          <div id="TrabalhosRealizados">
-            <ul id="TransparentBlack">
-              {
-                [
-                  {
-                    h4: "Desfiles",
-                    "p": "Feira Opera 2020/21, Catwalk internacional, Aquarela Nacional, Passarela produção Brasil como Mister São Paulo.",
-                    "img": Desfile
-                  },
-                  {
-                    h4: "Catálogos e campanhas",
-                    "p": "Oliver Kids, Malwee, Hering, Ellus, Demanos, Puket, Pistol Star e Hershey&apos;s.",
-                    "img": Campanha
-                  },
-                  {
-                    h4: "Novelas",
-                    "p": "As aventuras de Poliana SBT e Novela Reis da Record tv através da agência Cintra",
-                    "img": Novela
-                  },
-                  {
-                    h4: "Séries",
-                    "p": "Escolinha Ecológica NGT TV e Bugados Globo play",
-                    "img": Serie
-                  },
-                  {
-                    h4: "TV",
-                    "p": "personagem LIPI na tv SKY, programa de humor infantil exibido todos os sábados",
-                    "img": TV
-                  },
-                  {
-                    h4: "Comerciais",
-                    "p": "Prefeitura de Sorocaba, Itau, Bradesco",
-                    "img": Comercial
-                  },
-                  {
-                    h4: "Editoriais",
-                    "p": "Villy Ribeiro, Luciana Kajaer, Márcio Falcão",
-                    "img": Editorial
-                  },
-                ].map(({ h4, p, img }, key) => <li data-inviewport="slide-p-in" key={key}>
-                  <div className="ImageContainer">
-                    <img
-                      src={img.src}
-                      className="IconImage"
-                    />
-                  </div>
-                  <h4>{h4}</h4>
-                  <p>{p}</p>
-                </li>)
-              }
+     <CarouselJsonLd
+        ofType="default"
+        data={allImages.map((image, index) => ({
+          url: image.url.src,  // URL da imagem
+          name: image.name,    // Nome da imagem
+          description: image.description,  // Descrição
+          thumbnailUrl: image.url.src,  // Usando a URL da imagem como thumbnail
+          contentUrl: image.url.src,    // Usando a URL da imagem como conteúdo
+          position: index + 1,  // A posição é numerada
+        }))}
+      />
+
+      <BreadcrumbJsonLd
+          itemListElements={[
+            {
+              position: 1,
+              name: 'Início',
+              item: 'https://www.bielmarconato.com.br',
+            },
+          ]}
+        />
+        <WebPageJsonLd
+          url="https://www.bielmarconato.com.br"
+          title="Biel Marconato - Ator"
+          description="Site oficial de Biel Marconato, ator, com informações sobre seu trabalho, carreira e projetos."
+          images={['https://www.bielmarconato.com.br/images/Bielcruzado.jpg']}
+        />
+      <Transitions>
+        <Parallax img={BielA1}/>
+        <section id="sobre" data-inviewport="slide-in">
+          <article>
+            <h2>ator - modelo - influencer</h2>
+            <p>
+              Biel Marconato, 14 anos, atua no meio audiovisual como
+              ator, modelo e influencer. É um menino que está sempre
+              buscando se aprimorar e se atualizar.
+            </p>
+            <p>
+              <Tooltip target=".escola-oficina">
+                <Image
+                  src={EscolaOficina}
+                  width={200}
+                  height={200}
+                />
+              </Tooltip>
+              Como parte da sua formação de ator, estuda há 1 ano na <span className="escola-oficina">Escola Oficina</span> e faz vários cursos e workshops através da agência Cintra com os melhores profissionais do mercado tais como
+              Márcio Trigo, Foguinho, Bruno Stuane, Thiago Coquelet, Márcia Ítalo, Cristina Bethencourt, Edgar Miranda entre outros. Em sua
+              carreira já participou de campanhas publicitárias, peças de
+              teatro e seriados de televisão.
+            </p>
+            <p>
+              Atualmente estuda piano; cinema; TV; sapateado e tem como
+              passatempo jogar videogame.
+            </p>
+            <p>
+              Em seu Instagram, Biel Marconato compartilha dicas de
+              moda, os bastidores das campanhas, gravações e também
+              dicas de estudos e línguas.
+            </p>
+            <p>
+              Estando sempre ligado na trend do momento, Biel mostra
+              seu lado divertido através dos reels de comédia.
+            </p>
+          </article>
+          <aside>
+            <Image
+              layout='responsive'
+              objectPosition={"center center"}
+              src={BielOlhar}
+            />
+          </aside>
+        </section>
+
+        <section id="artista">
+          <h2>Artista</h2>
+          <article>
+            <h3>Trabalhos Realizados</h3>
+            <div id="TrabalhosRealizados">
+              <ul id="TransparentBlack">
+                {
+                  [
+                    {
+                      h4: "Desfiles",
+                      "p": "Feira Opera 2020/21, Catwalk internacional, Aquarela Nacional, Passarela produção Brasil como Mister São Paulo.",
+                      "img": Desfile
+                    },
+                    {
+                      h4: "Catálogos e campanhas",
+                      "p": "Oliver Kids, Malwee, Hering, Ellus, Demanos, Puket, Pistol Star e Hershey&apos;s.",
+                      "img": Campanha
+                    },
+                    {
+                      h4: "Novelas",
+                      "p": "As aventuras de Poliana SBT e Novela Reis da Record tv através da agência Cintra",
+                      "img": Novela
+                    },
+                    {
+                      h4: "Séries",
+                      "p": "Escolinha Ecológica NGT TV e Bugados Globo play",
+                      "img": Serie
+                    },
+                    {
+                      h4: "TV",
+                      "p": "personagem LIPI na tv SKY, programa de humor infantil exibido todos os sábados",
+                      "img": TV
+                    },
+                    {
+                      h4: "Comerciais",
+                      "p": "Prefeitura de Sorocaba, Itau, Bradesco",
+                      "img": Comercial
+                    },
+                    {
+                      h4: "Editoriais",
+                      "p": "Villy Ribeiro, Luciana Kajaer, Márcio Falcão",
+                      "img": Editorial
+                    },
+                  ].map(({ h4, p, img }, key) => <li data-inviewport="slide-p-in" key={key}>
+                    <div className="ImageContainer">
+                      <img
+                        src={img.src}
+                        className="IconImage"
+                      />
+                    </div>
+                    <h4>{h4}</h4>
+                    <p>{p}</p>
+                  </li>)
+                }
+              </ul>
+            </div>
+          </article>
+
+          <article>
+            <h3>Trabalhos Recentes</h3>
+            <ul id="TrabalhosRecentes"> 
+              <li className="TrabRecentItem">
+                <Image
+                  layout='responsive'
+                  objectFit='contain'
+                  objectPosition={"top center"}
+                  src={BielRiste}
+                  height={500}
+                  
+                  data-inviewport="scale-in"
+                />
+                <p className="Description"><strong>Filme</strong>: Guerra Cívil
+                  Personagem: Michelângelo (protagonista)
+                  Direção Flavio Carnielli</p>
+              </li>
+              <li>
+                <Carousel
+                  data-inviewport="scale-in"
+                  value={[Susto, Arrepiado, Aspirando, Cena, Correndo, Mirando, Susto2]}
+                  numVisible={1}
+                  numScroll={1}
+                  className="TrabRecentItem"
+                  autoplayInterval={2000}
+                  itemTemplate={workImages}
+                  footer={<p className="Description"><strong>Filme</strong>: Vicente na cidade Fantasma
+                    Personagem: Vicente (protagonista)</p>}
+                />
+              </li>
+              <li>
+                <Carousel
+                  data-inviewport="scale-in"
+                  value={[CapaNovela, NovelaReis, VigiaDeCana, Novel, RecordTV]}
+                  numVisible={1}
+                  numScroll={1}
+                  className="TrabRecentItem"
+                  autoplayInterval={3000}
+                  itemTemplate={workImages}
+                  footer={<p className="Description"><strong>Novela:</strong> Reis</p>}
+                />
+              </li>
+              <li>
+                <Carousel
+                  data-inviewport="scale-in"
+                  value={[Leleko, Palhaco, Lipi, SkyGirl, Sky]}
+                  numVisible={1}
+                  numScroll={1}
+                  className="TrabRecentItem"
+                  autoplayInterval={3000}
+                  itemTemplate={workImages}
+                  footer={<p className="Description"><strong>Programa de comédia:</strong> SKY TV como Lipi</p>}
+                />
+              </li>
             </ul>
-          </div>
-        </article>
-
-        <article>
-          <h3>Trabalhos Recentes</h3>
-          <ul id="TrabalhosRecentes"> 
-            <li className="TrabRecentItem">
-              <Image
-                layout='responsive'
-                objectFit='contain'
-                objectPosition={"top center"}
-                src={BielRiste}
-                height={500}
-                
-                data-inviewport="scale-in"
-              />
-              <p className="Description"><strong>Filme</strong>: Guerra Cívil
-                Personagem: Michelângelo (protagonista)
-                Direção Flavio Carnielli</p>
-            </li>
-            <li>
-              <Carousel
-                data-inviewport="scale-in"
-                value={[Susto, Arrepiado, Aspirando, Cena, Correndo, Mirando, Susto2]}
-                numVisible={1}
-                numScroll={1}
-                className="TrabRecentItem"
-                autoplayInterval={2000}
-                itemTemplate={workImages}
-                footer={<p className="Description"><strong>Filme</strong>: Vicente na cidade Fantasma
-                  Personagem: Vicente (protagonista)</p>}
-              />
-            </li>
-            <li>
-              <Carousel
-                data-inviewport="scale-in"
-                value={[CapaNovela, NovelaReis, VigiaDeCana, Novel, RecordTV]}
-                numVisible={1}
-                numScroll={1}
-                className="TrabRecentItem"
-                autoplayInterval={3000}
-                itemTemplate={workImages}
-                footer={<p className="Description"><strong>Novela:</strong> Reis</p>}
-              />
-            </li>
-            <li>
-              <Carousel
-                data-inviewport="scale-in"
-                value={[Leleko, Palhaco, Lipi, SkyGirl, Sky]}
-                numVisible={1}
-                numScroll={1}
-                className="TrabRecentItem"
-                autoplayInterval={3000}
-                itemTemplate={workImages}
-                footer={<p className="Description"><strong>Programa de comédia:</strong> SKY TV como Lipi</p>}
-              />
-            </li>
-          </ul>
-        </article>
-      </section>
-    </Transitions>
+          </article>
+        </section>
+      </Transitions>
+    </>
   )
 }
