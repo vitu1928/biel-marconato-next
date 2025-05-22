@@ -17,7 +17,7 @@ import Transitions from '../../components/transicao'
 
 import { GaleriaModelo, GaleriaDiretores, GaleriaImg } from "./style.module.scss"
 
-import { BreadcrumbJsonLd, WebPageJsonLd, CarouselJsonLd } from 'next-seo';
+import { BreadcrumbJsonLd, WebPageJsonLd, CarouselJsonLd, NextSeo } from 'next-seo';
 const directors = [
   {
     name: "Mônica Teixeira",
@@ -47,7 +47,7 @@ const directors = [
 
 export default function Galeria() {
     return (
-        <>
+        <>  <title>Galeria Biel</title>
             <WebPageJsonLd
                 url="https://www.bielmarconato.com.br/galeria"
                 title="Galeria - Biel Marconato"
@@ -61,6 +61,41 @@ export default function Galeria() {
                     ]
                 }
             />
+            <NextSeo
+                title="Biel Marconato"
+                description="Galeria dos trabalhos de teledramaturgia e diretores que trabalhou"
+                canonical="https://www.bielmarconato.com.br/galeria"
+                openGraph={{
+                    url: 'https://www.bielmarconato.com.br/galeria',
+                    type: 'website',
+                    title: 'Biel Marconato WebSite',
+                    description: 'Galeria de Biel Marconato',
+                    images: [
+                        {
+                        url: "images/Biels/Biel90.jpg",
+                        width: 90,
+                        height: 90,
+                        alt: 'Biel Marconato',
+                        type: 'image/jpeg',
+                        },
+                        {
+                        url: "images/Biels/Bielcruzado.jpg",
+                        width: 640,
+                        height: 640 ,
+                        alt: 'Biel Marconato',
+                        type: 'image/jpeg',
+                        },
+                        {
+                        url: "images/Biels/Bielellus.jpeg",
+                        width: 1080,
+                        height: 1080 ,
+                        alt: 'Biel Marconato',
+                        type: 'image/jpeg',
+                        }
+                    ],
+                    siteName: 'Biel Marconato',
+                }}
+            /> 
 
             <CarouselJsonLd
                 ofType="default"

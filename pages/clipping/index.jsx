@@ -23,6 +23,41 @@ export default function Clipping() {
                         'https://vimagazine.com.br/wp-content/uploads/2022/02/festa-Biel-4-1024x683.jpg'                    ]
                 }
             />
+            <NextSeo
+                title="Clipping Biel"
+                description="Clipping das menções de Biel Marconato nas redes"
+                canonical="https://www.bielmarconato.com.br/clipping"
+                openGraph={{
+                    url: 'https://www.bielmarconato.com.br/clipping',
+                    type: 'website',
+                    title: 'Clipping de Biel Marconato',
+                    description: 'Site de Biel Marconato ',
+                    images: [
+                        {
+                        url: "images/Biels/Biel90.jpg",
+                        width: 90,
+                        height: 90,
+                        alt: 'Biel Marconato',
+                        type: 'image/jpeg',
+                        },
+                        {
+                        url: "images/Biels/Bielcruzado.jpg",
+                        width: 640,
+                        height: 640 ,
+                        alt: 'Biel Marconato',
+                        type: 'image/jpeg',
+                        },
+                        {
+                        url: "images/Biels/Bielellus.jpeg",
+                        width: 1080,
+                        height: 1080 ,
+                        alt: 'Biel Marconato',
+                        type: 'image/jpeg',
+                        }
+                    ],
+                    siteName: 'Clipping Biel',
+                }}
+            /> 
             <BreadcrumbJsonLd
                 itemListElements={[
                 {

@@ -120,8 +120,6 @@ export default function Home() {
             __html: JSON.stringify(jsonLd),
           }}
         />
-
-        
       </Head>
   <NextSeo
       title="Biel Marconato"
