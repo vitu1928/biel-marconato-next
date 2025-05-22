@@ -5,7 +5,7 @@ import Transitions from "../../components/transicao";
 import { SectionClipping } from "./style.module.scss";
 
 import BielRio from "../../public/images/Biels/BielRio.jpg";
-import { BreadcrumbJsonLd, WebPageJsonLd } from 'next-seo';
+import { BreadcrumbJsonLd, WebPageJsonLd, NextSeo } from 'next-seo';
 
 export default function Clipping() {
     const lugares = require("./lugares.json")
