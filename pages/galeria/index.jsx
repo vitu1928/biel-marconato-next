@@ -47,7 +47,7 @@ const directors = [
 
 export default function Galeria() {
     return (
-        <>  <title>Galeria Biel</title>
+        <> 
             <WebPageJsonLd
                 url="https://www.bielmarconato.com.br/galeria"
                 title="Galeria - Biel Marconato"
@@ -62,7 +62,7 @@ export default function Galeria() {
                 }
             />
             <NextSeo
-                title="Biel Marconato"
+                title="Galeria - Biel Marconato"
                 description="Galeria dos trabalhos de teledramaturgia e diretores que trabalhou"
                 canonical="https://www.bielmarconato.com.br/galeria"
                 openGraph={{
