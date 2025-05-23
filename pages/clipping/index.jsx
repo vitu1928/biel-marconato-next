@@ -14,7 +14,7 @@ export default function Clipping() {
         <>
             <WebPageJsonLd
                 url="https://www.bielmarconato.com.br/galeria"
-                title="Galeria - Biel Marconato"
+                title="Clipping - Biel Marconato"
                 description="Confira a galeria de fotos e vídeos de Biel Marconato, com imagens dos seus projetos e eventos."
                 images={
                     [   'https://release.celebs.com.br/medias/posts/big/23952/1-38.jpg',
